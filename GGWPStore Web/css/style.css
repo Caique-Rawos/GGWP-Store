@@ -6,19 +6,8 @@ body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
  }
-i,.corLetra,.text_comprar,h2,h3{
+i,.corLetra, hr{
     color: white;
-}
-
-.text_comprar, .img_teste{
-    display: inline-block;
-    /*float: left;*/
-    margin-top: 10vh;
-    margin-left: 25vh;
-}
-h2,h3{
-    margin-left: 10vh;
-    margin-top: 1vh;
 }
 
 div.margem{
@@ -26,10 +15,14 @@ div.margem{
     margin-left: 9%;
 }
 .prod{
-    flex: 1; /*distribui as 3 divs dentro do conteiner com larguras iguais*/
+    flex: 1; /*distribui as 3 divs dentro do container com larguras iguais*/
     margin: 5px; /*coloca uma margem entre elas*/
-    text-align: center;
+    padding: 5px;
     border: 5px solid #191919;
+}
+.prod2{
+    flex: 1;
+    border: 3px solid #191919;
 }
 .produto{
     display: flex;
@@ -39,16 +32,80 @@ div.margem{
 .tamanho{
     width: 100%;
 }
-.conteudo-pagina{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-.corLetra-cabecalho{
+.corLetra-cabecalho, a.decoracao{
     text-decoration: none;
 }
 .image-perfil{
     border-image-width: 2px;
-    width: 20%;
-    min-width: 175px;
+    width: 20%; 
+    min-width: 125px;
+}
+.bordaItens{
+    border: 1px solid rgb(65, 65, 65);
+    padding: 5px;
+    border-radius: 10px;
+    height: 100%;
+}
+aside{
+    width: 40vw;
+    max-width: 300px;
+    margin-left: 1%;
+}
+.carrinho{
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+main{
+    flex: 1;
+}
+a.categorias{
+    text-decoration: none;
+}
+i.amarelo{
+    color: gold;
+}
+.marginPerfil{
+    margin-left: 2%;
+}
+.bordaBaixo{
+    border-bottom: #191919 1px solid;
+}
+.conteudoPerfil{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 8px;
+    border: 2px solid #191919;
+    border-radius: 10px;
+}
+.imagem-miniatura{
+    border: 1px solid #191919;
+    margin-right: 5px;
+    width: 5vh;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.conteudoPagina{
+    flex-grow: 1;
+    width: 80%;
+}
+.itemCarinho{
+    width: 100%;
+    height: auto;
+    
+}
+.card{
+    background-color: black;
+}
+.conteudoAccordiao{
+    background-color: #191919;
+    border-radius: 5px;
+}
+.altura100{
+    height: 100%;
 }

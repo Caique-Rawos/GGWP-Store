@@ -1,0 +1,15 @@
+create table Usuario (email varchar(100) primary key, celular varchar(11) null, cep varchar(8) not null, UF char(2) not null, cidade varchar(50) not null, bairro varchar(50) not null, rua varchar(50) not null, numeroCasa varchar(5) not null, senha varchar(20) not null);
+create table Pedido (idVenda int primary key, valor decimal(7,2) not null, formaPagamento char(12) not null, parcelas char(2), observacao text, data datetime not null);
+create table Produto (idProduto int primary key, nome varchar(50) not null, valor decimal(7,2) not null, quantidadeEstoque int not null, descricao text);
+create table Fisica (cpf varchar(11) primary key);
+create table Juridica (cnpj varchar(14) primary key);
+alter table Pedido add emailUsuario varchar(100) not null;
+alter table Pedido add foreign key (emailUsuario) references Usuario(email);
+alter table Produto add column cnpjFornecedor varchar(14) not null;
+alter table Produto add foreign key (cnpjFornecedor) references Juridica(cnpj);
+create table DetalhesPedido (valorCompra decimal(7,2) not null, desconto decimal(7,2) not null, quantidade int not null);
+alter table DetalhesPedido add column idProduto int not null;
+alter table DetalhesPedido add column idVenda int not null;
+alter table DetalhesPedido add foreign key (idVenda) references Pedido(idVenda);
+alter table DetalhesPedido add foreign key (idProduto) references Produto(idProduto);
+show tables;
