@@ -10,7 +10,7 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Desenvolvimento Figma
-- [ ] Desenvolvimento WEB
+- [x] Desenvolvimento WEB
 - [ ] Desenvolvimento Mobile
 - [ ] Desenvolvimento Desktop
 - [ ] Testes

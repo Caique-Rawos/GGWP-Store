@@ -1,0 +1,22 @@
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form2.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form2.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
