@@ -20,3 +20,19 @@ C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP St
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form2.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form3.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form4.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form5.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form6.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form7.resources

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GGWPStore">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FunkoPopActivity"
+            android:exported="false" />
+        <activity
             android:name=".ItensActivity"
             android:exported="false" />
         <activity

@@ -9,7 +9,7 @@
     tools:context=".MainActivity" >
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/fundoMenu1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-3dp"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/rectangle1" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Menu1"
+        android:id="@+id/menu3"
         android:layout_width="47dp"
         android:layout_height="35dp"
         android:layout_marginStart="16dp"
@@ -29,67 +29,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="229dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="3dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Buscar" />
-    </com.google.android.material.textfield.TextInputLayout>
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nomeMenu1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="GGWP"
-        android:textColor="#AE0000"
+        android:textColor="#FF0000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Login1"
+        android:id="@+id/login3"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/login"
+        android:onClick="login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Carrinho1"
+        android:id="@+id/carrinho3"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/carrinho"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Login1" />
+        app:layout_constraintTop_toBottomOf="@+id/login3" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/fundoMenu1"
         app:srcCompat="@drawable/banner" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/categ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -98,7 +82,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Colecionaveis"
@@ -108,7 +92,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/colecionaveis"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/categ" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Games"
@@ -118,7 +102,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/games"
         app:layout_constraintStart_toEndOf="@+id/Colecionaveis"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/categ" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Computadores"
@@ -128,10 +112,10 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/computadores"
         app:layout_constraintStart_toEndOf="@+id/Games"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/categ" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/maisVend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -143,7 +127,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Games" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/rodape"
         android:layout_width="419dp"
         android:layout_height="88dp"
         android:layout_marginTop="8dp"
@@ -158,9 +142,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/funkopop"
+        android:onClick="funkopop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/maisVend"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/buscar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeMenu1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

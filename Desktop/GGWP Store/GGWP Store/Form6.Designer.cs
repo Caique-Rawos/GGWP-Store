@@ -1,7 +1,7 @@
 ﻿
 namespace GGWP_Store
 {
-    partial class Form2
+    partial class Form6
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,7 @@ namespace GGWP_Store
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1401, 831);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
             // 
@@ -87,6 +87,8 @@ namespace GGWP_Store
             this.tableLayoutPanel3.Controls.Add(this.button5, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.button6, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.tableLayoutPanel3.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(1, 1);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -112,7 +114,6 @@ namespace GGWP_Store
             this.button1.TabIndex = 0;
             this.button1.Text = "Vendas";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -124,7 +125,6 @@ namespace GGWP_Store
             this.button2.TabIndex = 1;
             this.button2.Text = "Perfil";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -136,7 +136,6 @@ namespace GGWP_Store
             this.button3.TabIndex = 2;
             this.button3.Text = "Produtos";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -148,7 +147,6 @@ namespace GGWP_Store
             this.button4.TabIndex = 3;
             this.button4.Text = "Config";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -160,7 +158,6 @@ namespace GGWP_Store
             this.button5.TabIndex = 4;
             this.button5.Text = "Ajuda";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -174,19 +171,16 @@ namespace GGWP_Store
             this.button6.Text = "X";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // Form6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1401, 831);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "Form2";
+            this.Name = "Form6";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Inicio";
+            this.Text = "Configurações";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
