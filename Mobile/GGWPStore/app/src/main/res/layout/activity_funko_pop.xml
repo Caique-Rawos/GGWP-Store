@@ -79,27 +79,10 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/carrinho"
+        android:onClick="carinho"
         app:layout_constraintBottom_toBottomOf="@+id/fundoMenu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login3" />
-
-    <EditText
-        android:id="@+id/buscar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:textColor="#FFFEFE"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#000000"
-        android:textColorLink="#000000"
-        app:layout_constraintBottom_toBottomOf="@+id/fundoMenu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeMenu"
-        app:layout_constraintVertical_bias="0.794" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/voltar"
@@ -107,6 +90,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="24dp"
         android:background="@drawable/x"
+        android:onClick="produtos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fundoDesc" />
 
@@ -116,6 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:background="@drawable/comprar"
+        android:onClick="carinho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fundoDesc" />
 
@@ -202,10 +187,33 @@
         android:layout_width="35dp"
         android:layout_height="31dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="104dp"
         android:text="R$"
-        android:textColor="#E60909"
+        android:textColor="#F44336"
         android:textSize="27sp"
-        app:layout_constraintTop_toBottomOf="@+id/nomeProd"
-        tools:layout_editor_absoluteX="268dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProd" />
+
+    <ImageView
+        android:id="@+id/campoBuscar6"
+        android:layout_width="213dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/escreverBuscar"
+        app:srcCompat="@drawable/pesquisa" />
+
+    <EditText
+        android:id="@+id/escreverBuscar"
+        android:layout_width="195dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/campoBuscar6"
+        app:layout_constraintStart_toStartOf="@+id/campoBuscar6"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

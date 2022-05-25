@@ -8,31 +8,93 @@ C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.Cor
 C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
 C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
 C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
-C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form2.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Inicio.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Vendas.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Config.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserInfo.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserProfile.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Chat.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Community.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Help.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NewProduct.resources
+C:\Users\USER\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Products.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Chat.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Community.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Config.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Help.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Inicio.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NewProduct.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Products.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserInfo.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserProfile.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Vendas.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
+C:\Users\aluno\source\repos\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Chat.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Community.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Config.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Help.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Inicio.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NewProduct.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Products.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserInfo.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserProfile.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Vendas.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
+C:\Users\aluno\source\repos\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Chat.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Community.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Config.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Help.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Inicio.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NewProduct.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Products.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserInfo.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserProfile.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Vendas.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
+C:\Users\User\Desktop\sarvar\Cotil\C e C#\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
-C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form2.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Chat.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Community.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Config.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Help.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Inicio.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NewProduct.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Products.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserInfo.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserProfile.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Vendas.resources
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form2.resources
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form3.resources
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form4.resources
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form5.resources
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form6.resources
-C:\Users\aluno\Downloads\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Form7.resources

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,64 +53,100 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="F_Chat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="F_Chat.Designer.cs">
+      <DependentUpon>F_Chat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="F_Community.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="F_Community.Designer.cs">
+      <DependentUpon>F_Community.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="F_Config.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="F_Config.Designer.cs">
+      <DependentUpon>F_Config.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="F_Help.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="F_Help.Designer.cs">
+      <DependentUpon>F_Help.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="F_Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="F_Inicio.Designer.cs">
+      <DependentUpon>F_Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="F_NewProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="F_NewProduct.Designer.cs">
+      <DependentUpon>F_NewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Products.Designer.cs">
+      <DependentUpon>F_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_UserInfo.Designer.cs">
+      <DependentUpon>F_UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_UserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_UserProfile.Designer.cs">
+      <DependentUpon>F_UserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Vendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Vendas.Designer.cs">
+      <DependentUpon>F_Vendas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="F_Chat.resx">
+      <DependentUpon>F_Chat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="F_Community.resx">
+      <DependentUpon>F_Community.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="F_Config.resx">
+      <DependentUpon>F_Config.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="F_Help.resx">
+      <DependentUpon>F_Help.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="F_Inicio.resx">
+      <DependentUpon>F_Inicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="F_NewProduct.resx">
+      <DependentUpon>F_NewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Products.resx">
+      <DependentUpon>F_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_UserInfo.resx">
+      <DependentUpon>F_UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_UserProfile.resx">
+      <DependentUpon>F_UserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Vendas.resx">
+      <DependentUpon>F_Vendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,6 +156,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -132,6 +170,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star 18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fluent_send-28-filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line 21 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45406.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsplash_4PchFKrUw8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsplash_4PchFKrUw84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsplash_d2Py_uhXJQo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsplash_HyTwtsk8XqA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsplash_Vn23hKQUNds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsplash_vtkQTNrJ2cs.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

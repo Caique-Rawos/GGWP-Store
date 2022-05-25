@@ -21,4 +21,12 @@ public class MainActivity extends AppCompatActivity {
         Intent tela = new Intent(this,LoginActivity.class);
         startActivity(tela);
     }
+    public void carinho(View v){
+        Intent tela = new Intent(this,CarrinhoActivity.class);
+        startActivity(tela);
+    }
+    public void produtos(View v){
+        Intent tela = new Intent(this,ProdutosActivity.class);
+        startActivity(tela);
+    }
 }

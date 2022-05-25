@@ -58,18 +58,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/carrinho"
+        android:onClick="carinho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login3" />
-
-    <ImageView
-        android:id="@+id/campoBuscar3"
-        android:layout_width="230dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomeMenu3"
-        app:srcCompat="@drawable/pesquisa" />
 
     <ImageView
         android:id="@+id/fundoLogin"
@@ -124,6 +115,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="52dp"
+        android:onClick="recSenha"
         android:text="Esqueceu a senha?"
         android:textColor="#2196F3"
         android:textSize="16sp"
@@ -135,7 +127,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Regristar"
+        android:onClick="registro"
+        android:text="Registrar"
         android:textColor="#2196F3"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/fundoLogin"
@@ -171,7 +164,7 @@
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/entrar"
-        android:onClick="menu"
+        android:onClick="perfil"
         app:layout_constraintEnd_toEndOf="@+id/fundoLogin"
         app:layout_constraintStart_toStartOf="@+id/fundoLogin"
         app:layout_constraintTop_toBottomOf="@+id/lembrar" />
@@ -220,16 +213,26 @@
         app:layout_constraintStart_toStartOf="@+id/fundoSenha"
         app:layout_constraintTop_toTopOf="@+id/fundoSenha" />
 
-    <EditText
-        android:id="@+id/escreverBuscar"
-        android:layout_width="206dp"
+    <ImageView
+        android:id="@+id/campoBuscar7"
+        android:layout_width="213dp"
         android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/escreverBuscar7"
+        app:srcCompat="@drawable/pesquisa" />
+
+    <EditText
+        android:id="@+id/escreverBuscar7"
+        android:layout_width="195dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="@+id/campoBuscar3"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="@+id/campoBuscar3"
-        app:layout_constraintTop_toTopOf="@+id/campoBuscar3" />
+        app:layout_constraintEnd_toEndOf="@+id/campoBuscar7"
+        app:layout_constraintStart_toStartOf="@+id/campoBuscar7"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

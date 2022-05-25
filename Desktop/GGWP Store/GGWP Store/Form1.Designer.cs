@@ -29,6 +29,7 @@ namespace GGWP_Store
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.loginButton = new System.Windows.Forms.Button();
@@ -73,6 +74,7 @@ namespace GGWP_Store
             // loginButton
             // 
             this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginButton.FlatAppearance.BorderSize = 0;
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
@@ -150,7 +152,6 @@ namespace GGWP_Store
             // 
             // userTextBox
             // 
-            this.userTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.userTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.userTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
@@ -169,6 +170,9 @@ namespace GGWP_Store
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(473, 450);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

@@ -17,4 +17,20 @@ public class LoginActivity extends AppCompatActivity {
         Intent tela = new Intent(this,MainActivity.class);
         startActivity(tela);
     }
+    public void carinho(View v){
+        Intent tela = new Intent(this,CarrinhoActivity.class);
+        startActivity(tela);
+    }
+    public void perfil(View v){
+        Intent tela = new Intent(this,PerfilActivity.class);
+        startActivity(tela);
+    }
+    public void registro(View v){
+        Intent tela = new Intent(this,RegistroActivity.class);
+        startActivity(tela);
+    }
+    public void recSenha(View v){
+        Intent tela = new Intent(this,RecuperarSenhaActivity.class);
+        startActivity(tela);
+    }
 }

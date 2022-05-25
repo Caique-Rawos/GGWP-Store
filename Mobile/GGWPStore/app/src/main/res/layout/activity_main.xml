@@ -59,6 +59,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/carrinho"
+        android:onClick="carinho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login3" />
 
@@ -91,6 +92,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/colecionaveis"
+        android:onClick="produtos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/categ" />
 
@@ -148,15 +150,26 @@
         app:layout_constraintTop_toBottomOf="@+id/maisVend"
         tools:ignore="SpeakableTextPresentCheck" />
 
+    <ImageView
+        android:id="@+id/campoBuscar5"
+        android:layout_width="213dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/escreverBuscar6"
+        app:srcCompat="@drawable/pesquisa" />
+
     <EditText
-        android:id="@+id/buscar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/escreverBuscar6"
+        android:layout_width="195dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomeMenu1" />
+        app:layout_constraintEnd_toEndOf="@+id/campoBuscar5"
+        app:layout_constraintStart_toStartOf="@+id/campoBuscar5"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

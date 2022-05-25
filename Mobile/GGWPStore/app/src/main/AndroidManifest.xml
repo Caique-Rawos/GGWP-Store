@@ -10,13 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GGWPStore">
         <activity
+            android:name=".RecuperarSenhaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CarrinhoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProdutosActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".FunkoPopActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ItensActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

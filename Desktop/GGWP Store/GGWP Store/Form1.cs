@@ -19,7 +19,7 @@ namespace GGWP_Store
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            Form2 inicio = new Form2();
+            F_Inicio inicio = new F_Inicio();
             inicio.Show();
         }
     }
