@@ -112,7 +112,7 @@ namespace GGWP_Store
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.label5.ForeColor = System.Drawing.Color.Blue;
             this.label5.Location = new System.Drawing.Point(7, 20);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(354, 13);
@@ -168,6 +168,7 @@ namespace GGWP_Store
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "F_Help";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajuda";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

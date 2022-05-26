@@ -256,7 +256,7 @@ namespace GGWP_Store
             this.MaximizeBox = false;
             this.Name = "F_Config";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "F_Config";
+            this.Text = "Configurações";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.F_Config_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);

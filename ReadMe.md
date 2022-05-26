@@ -11,6 +11,6 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [x] Desenvolvimento Figma
 - [x] Desenvolvimento WEB
-- [ ] Desenvolvimento Mobile
-- [ ] Desenvolvimento Desktop
+- [x] Desenvolvimento Mobile
+- [x] Desenvolvimento Desktop
 - [ ] Testes

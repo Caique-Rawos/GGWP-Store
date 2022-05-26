@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace GGWP_Store
 {
-    public partial class F_Vendas : Form
+    public partial class F_NotaFiscal : Form
     {
-        public F_Vendas()
+        public F_NotaFiscal()
         {
             InitializeComponent();
         }
 
-        private void panel2_MouseClick(object sender, MouseEventArgs e)
+        private void resumoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms["F_Resumo"] == null)
             {

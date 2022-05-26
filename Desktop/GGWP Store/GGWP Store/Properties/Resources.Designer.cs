@@ -73,6 +73,26 @@ namespace GGWP_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Amanda {
+            get {
+                object obj = ResourceManager.GetObject("Amanda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ellipse_20 {
             get {
                 object obj = ResourceManager.GetObject("Ellipse 20", resourceCulture);
@@ -83,9 +103,29 @@ namespace GGWP_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fa_upload {
+            get {
+                object obj = ResourceManager.GetObject("fa_upload", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fluent_send_28_filled {
             get {
                 object obj = ResourceManager.GetObject("fluent_send-28-filled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jorgin {
+            get {
+                object obj = ResourceManager.GetObject("jorgin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +156,16 @@ namespace GGWP_Store.Properties {
         internal static System.Drawing.Bitmap Line_6 {
             get {
                 object obj = ResourceManager.GetObject("Line 6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap megamente {
+            get {
+                object obj = ResourceManager.GetObject("megamente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +296,16 @@ namespace GGWP_Store.Properties {
         internal static System.Drawing.Bitmap unsplash_vtkQTNrJ2cs {
             get {
                 object obj = ResourceManager.GetObject("unsplash_vtkQTNrJ2cs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap will__2_ {
+            get {
+                object obj = ResourceManager.GetObject("will (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

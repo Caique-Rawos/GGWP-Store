@@ -98,3 +98,5 @@ C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP St
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
 C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Resumo.resources
+C:\Users\User\Desktop\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NotaFiscal.resources

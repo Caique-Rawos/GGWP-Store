@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +53,18 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_NotaFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_NotaFiscal.Designer.cs">
+      <DependentUpon>F_NotaFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Resumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Resumo.Designer.cs">
+      <DependentUpon>F_Resumo.cs</DependentUpon>
     </Compile>
     <Compile Include="F_Chat.cs">
       <SubType>Form</SubType>
@@ -118,6 +131,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_NotaFiscal.resx">
+      <DependentUpon>F_NotaFiscal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_Chat.resx">
       <DependentUpon>F_Chat.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_Products.resx">
       <DependentUpon>F_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Resumo.resx">
+      <DependentUpon>F_Resumo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_UserInfo.resx">
       <DependentUpon>F_UserInfo.cs</DependentUpon>
@@ -227,6 +246,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\unsplash_vtkQTNrJ2cs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fa_upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\will %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\megamente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jorgin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amanda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

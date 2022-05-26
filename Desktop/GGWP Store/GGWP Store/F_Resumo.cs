@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace GGWP_Store
 {
-    public partial class F_Vendas : Form
+    public partial class F_Resumo : Form
     {
-        public F_Vendas()
+        public F_Resumo()
         {
             InitializeComponent();
         }
 
-        private void panel2_MouseClick(object sender, MouseEventArgs e)
+        private void notaFiscalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Application.OpenForms["F_Resumo"] == null)
+            if (Application.OpenForms["F_NotaFiscal"] == null)
             {
-                F_Resumo f_resumo = new F_Resumo();
-                f_resumo.Show();
+                F_NotaFiscal f_nota = new F_NotaFiscal();
+                f_nota.Show();
             }
         }
     }

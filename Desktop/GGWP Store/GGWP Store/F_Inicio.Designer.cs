@@ -171,7 +171,7 @@ namespace GGWP_Store
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "F_Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "F_Inicio";
+            this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

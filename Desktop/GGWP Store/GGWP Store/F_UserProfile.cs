@@ -16,15 +16,5 @@ namespace GGWP_Store
         {
             InitializeComponent();
         }
-
-        private void F_UserProfile_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
