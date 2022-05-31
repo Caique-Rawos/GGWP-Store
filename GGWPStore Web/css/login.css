@@ -5,8 +5,11 @@ body{
     background-repeat: no-repeat;
     scroll-behavior: smooth;
 }
-.corLetra, i{
+.corLetra{
     color: white;
+}
+i{
+    color: darkgrey;
 }
 .form-container{
     border-radius: 10px;
