@@ -65,7 +65,7 @@ namespace GGWP_Store
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(92, 113);
+            this.panel1.Location = new System.Drawing.Point(14, 113);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(653, 654);
             this.panel1.TabIndex = 3;
@@ -176,6 +176,7 @@ namespace GGWP_Store
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -187,6 +188,7 @@ namespace GGWP_Store
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -232,14 +234,13 @@ namespace GGWP_Store
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.radioButton4);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.radioButton3);
             this.panel3.Controls.Add(this.lb_filter);
             this.panel3.Controls.Add(this.radioButton2);
             this.panel3.Controls.Add(this.radioButton1);
-            this.panel3.Location = new System.Drawing.Point(92, 9);
+            this.panel3.Location = new System.Drawing.Point(14, 9);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(653, 87);
             this.panel3.TabIndex = 0;
@@ -259,11 +260,11 @@ namespace GGWP_Store
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 3);
+            this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.MaximumSize = new System.Drawing.Size(653, 32);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(653, 32);
+            this.textBox1.Size = new System.Drawing.Size(645, 32);
             this.textBox1.TabIndex = 2;
             // 
             // radioButton3
@@ -318,10 +319,10 @@ namespace GGWP_Store
             // 
             // F_Vendas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(825, 777);
+            this.ClientSize = new System.Drawing.Size(697, 387);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

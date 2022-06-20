@@ -30,12 +30,10 @@ namespace GGWP_Store
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_NewProduct));
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtQtd = new System.Windows.Forms.TextBox();
+            this.txtValue = new System.Windows.Forms.TextBox();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -43,65 +41,61 @@ namespace GGWP_Store
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.erroNome = new System.Windows.Forms.Label();
+            this.erroValor = new System.Windows.Forms.Label();
+            this.erroQtd = new System.Windows.Forms.Label();
+            this.txtSucess = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox4
+            // txtQtd
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.textBox4.Location = new System.Drawing.Point(686, 316);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(155, 20);
-            this.textBox4.TabIndex = 7;
+            this.txtQtd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.txtQtd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtQtd.ForeColor = System.Drawing.Color.White;
+            this.txtQtd.Location = new System.Drawing.Point(686, 287);
+            this.txtQtd.Multiline = true;
+            this.txtQtd.Name = "txtQtd";
+            this.txtQtd.Size = new System.Drawing.Size(155, 39);
+            this.txtQtd.TabIndex = 7;
             // 
-            // textBox3
+            // txtValue
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.textBox3.Location = new System.Drawing.Point(468, 316);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(144, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.txtValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtValue.ForeColor = System.Drawing.Color.White;
+            this.txtValue.Location = new System.Drawing.Point(468, 287);
+            this.txtValue.Multiline = true;
+            this.txtValue.Name = "txtValue";
+            this.txtValue.Size = new System.Drawing.Size(144, 39);
+            this.txtValue.TabIndex = 7;
             // 
-            // textBox2
+            // txtDesc
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.textBox2.Location = new System.Drawing.Point(195, 426);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(646, 179);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.txtDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtDesc.ForeColor = System.Drawing.Color.White;
+            this.txtDesc.Location = new System.Drawing.Point(195, 378);
+            this.txtDesc.Multiline = true;
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(646, 175);
+            this.txtDesc.TabIndex = 6;
             // 
-            // button2
+            // txtName
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkGreen;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(755, 636);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 33);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Enviar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(195, 636);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 33);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Limpar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.textBox1.Location = new System.Drawing.Point(468, 212);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(373, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtName.ForeColor = System.Drawing.Color.White;
+            this.txtName.Location = new System.Drawing.Point(468, 168);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(373, 39);
+            this.txtName.TabIndex = 3;
             // 
             // panel2
             // 
@@ -109,9 +103,9 @@ namespace GGWP_Store
             this.panel2.BackgroundImage = global::GGWP_Store.Properties.Resources.fa_upload;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(195, 155);
+            this.panel2.Location = new System.Drawing.Point(195, 140);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 183);
+            this.panel2.Size = new System.Drawing.Size(192, 188);
             this.panel2.TabIndex = 2;
             // 
             // label10
@@ -119,7 +113,7 @@ namespace GGWP_Store
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(189, 371);
+            this.label10.Location = new System.Drawing.Point(189, 344);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(136, 31);
             this.label10.TabIndex = 1;
@@ -130,7 +124,7 @@ namespace GGWP_Store
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(680, 258);
+            this.label8.Location = new System.Drawing.Point(680, 242);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(154, 31);
             this.label8.TabIndex = 1;
@@ -141,7 +135,7 @@ namespace GGWP_Store
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(462, 258);
+            this.label6.Location = new System.Drawing.Point(462, 242);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 31);
             this.label6.TabIndex = 1;
@@ -152,7 +146,7 @@ namespace GGWP_Store
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(462, 155);
+            this.label5.Location = new System.Drawing.Point(462, 119);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 31);
             this.label5.TabIndex = 1;
@@ -163,7 +157,7 @@ namespace GGWP_Store
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(189, 98);
+            this.label4.Location = new System.Drawing.Point(189, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 31);
             this.label4.TabIndex = 1;
@@ -174,31 +168,105 @@ namespace GGWP_Store
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.25F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(188, 19);
+            this.label1.Location = new System.Drawing.Point(188, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(330, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cadastro de Produto";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.button3.ForeColor = System.Drawing.Color.Red;
+            this.button3.Location = new System.Drawing.Point(195, 576);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(98, 43);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Limpar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.button4.ForeColor = System.Drawing.Color.Lime;
+            this.button4.Location = new System.Drawing.Point(743, 576);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(98, 43);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Enviar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // erroNome
+            // 
+            this.erroNome.AutoSize = true;
+            this.erroNome.ForeColor = System.Drawing.Color.Red;
+            this.erroNome.Location = new System.Drawing.Point(465, 214);
+            this.erroNome.Name = "erroNome";
+            this.erroNome.Size = new System.Drawing.Size(0, 13);
+            this.erroNome.TabIndex = 10;
+            // 
+            // erroValor
+            // 
+            this.erroValor.AutoSize = true;
+            this.erroValor.ForeColor = System.Drawing.Color.Red;
+            this.erroValor.Location = new System.Drawing.Point(465, 332);
+            this.erroValor.Name = "erroValor";
+            this.erroValor.Size = new System.Drawing.Size(0, 13);
+            this.erroValor.TabIndex = 11;
+            // 
+            // erroQtd
+            // 
+            this.erroQtd.AutoSize = true;
+            this.erroQtd.ForeColor = System.Drawing.Color.Red;
+            this.erroQtd.Location = new System.Drawing.Point(683, 332);
+            this.erroQtd.Name = "erroQtd";
+            this.erroQtd.Size = new System.Drawing.Size(0, 13);
+            this.erroQtd.TabIndex = 12;
+            // 
+            // txtSucess
+            // 
+            this.txtSucess.AutoSize = true;
+            this.txtSucess.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtSucess.ForeColor = System.Drawing.Color.Lime;
+            this.txtSucess.Location = new System.Drawing.Point(368, 585);
+            this.txtSucess.Name = "txtSucess";
+            this.txtSucess.Size = new System.Drawing.Size(0, 24);
+            this.txtSucess.TabIndex = 13;
             // 
             // F_NewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1042, 707);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(1042, 706);
+            this.Controls.Add(this.txtSucess);
+            this.Controls.Add(this.erroQtd);
+            this.Controls.Add(this.erroValor);
+            this.Controls.Add(this.erroNome);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.txtQtd);
+            this.Controls.Add(this.txtValue);
+            this.Controls.Add(this.txtDesc);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label8);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "F_NewProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -212,15 +280,19 @@ namespace GGWP_Store
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDesc;
+        private System.Windows.Forms.TextBox txtValue;
+        private System.Windows.Forms.TextBox txtQtd;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label erroNome;
+        private System.Windows.Forms.Label erroValor;
+        private System.Windows.Forms.Label erroQtd;
+        private System.Windows.Forms.Label txtSucess;
     }
 }

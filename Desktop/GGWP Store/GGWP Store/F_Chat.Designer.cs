@@ -31,6 +31,12 @@ namespace GGWP_Store
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Chat));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,19 +44,13 @@ namespace GGWP_Store
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +67,66 @@ namespace GGWP_Store
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(249, 721);
             this.panel3.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(77, 87);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 24);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Amanda RH";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::GGWP_Store.Properties.Resources.Amanda;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 84);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(59, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(77, 8);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 24);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Jorgin T.I.";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GGWP_Store.Properties.Resources.jorgin;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = global::GGWP_Store.Properties.Resources.Line_21__1_;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel5.Location = new System.Drawing.Point(0, 154);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(249, 3);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::GGWP_Store.Properties.Resources.Line_21__1_;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Location = new System.Drawing.Point(0, 75);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(249, 3);
+            this.panel4.TabIndex = 0;
             // 
             // panel7
             // 
@@ -116,7 +176,7 @@ namespace GGWP_Store
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(11, 37);
+            this.label4.Location = new System.Drawing.Point(5, 35);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 24);
             this.label4.TabIndex = 1;
@@ -127,7 +187,7 @@ namespace GGWP_Store
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(144)))));
-            this.label3.Location = new System.Drawing.Point(11, 7);
+            this.label3.Location = new System.Drawing.Point(5, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 24);
             this.label3.TabIndex = 0;
@@ -143,66 +203,6 @@ namespace GGWP_Store
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "8:43 AM";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(77, 8);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 24);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Jorgin T.I.";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(77, 87);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 24);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Amanda RH";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::GGWP_Store.Properties.Resources.Amanda;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 84);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(59, 64);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GGWP_Store.Properties.Resources.jorgin;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackgroundImage = global::GGWP_Store.Properties.Resources.Line_21__1_;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel5.Location = new System.Drawing.Point(0, 154);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(249, 3);
-            this.panel5.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = global::GGWP_Store.Properties.Resources.Line_21__1_;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.Location = new System.Drawing.Point(0, 75);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(249, 3);
-            this.panel4.TabIndex = 0;
             // 
             // panel1
             // 
@@ -230,8 +230,7 @@ namespace GGWP_Store
             // 
             // F_Chat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1000, 717);
             this.Controls.Add(this.label5);
@@ -246,12 +245,12 @@ namespace GGWP_Store
             this.Text = "Chat";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

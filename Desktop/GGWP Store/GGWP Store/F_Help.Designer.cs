@@ -33,7 +33,6 @@ namespace GGWP_Store
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,6 +40,10 @@ namespace GGWP_Store
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -56,17 +59,20 @@ namespace GGWP_Store
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(60, 53);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(995, 516);
+            this.panel1.Size = new System.Drawing.Size(995, 528);
             this.panel1.TabIndex = 0;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox3.Location = new System.Drawing.Point(44, 355);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(906, 102);
+            this.groupBox3.Size = new System.Drawing.Size(906, 143);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Caso não consiga resolver seu problema entre em contato com a gente";
@@ -78,16 +84,6 @@ namespace GGWP_Store
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 0;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 20);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 78);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Telefone : (19) 9843-4298\r\nTelefone 2 : (19) 4232-1248\r\n\r\nE-mail : ggwp_store@gma" +
-    "il.com\r\nE-mail 2 : ggwpstore@gmail.com\r\n\r\n";
             // 
             // groupBox2
             // 
@@ -159,12 +155,47 @@ namespace GGWP_Store
             this.label1.TabIndex = 0;
             this.label1.Text = "Precisa de ajuda?";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 30);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(127, 13);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Telefone: (19) 9843-4298";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 56);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(133, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Telefone2: (19) 9843-1298";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 85);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(154, 13);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "E-mail: ggwp_store@gmail.com";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 110);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(154, 13);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "E-mail2: ggwpstore@gmail.com";
+            // 
             // F_Help
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1135, 610);
+            this.ClientSize = new System.Drawing.Size(1135, 607);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "F_Help";
@@ -193,7 +224,10 @@ namespace GGWP_Store
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }

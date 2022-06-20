@@ -41,6 +41,7 @@ namespace GGWP_Store
             this.keepConnectCheckBox = new System.Windows.Forms.CheckBox();
             this.passTextBox = new System.Windows.Forms.TextBox();
             this.userTextBox = new System.Windows.Forms.TextBox();
+            this.erroLogin = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,13 +55,14 @@ namespace GGWP_Store
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(429, 476);
+            this.panel1.Size = new System.Drawing.Size(429, 404);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.panel2.Controls.Add(this.erroLogin);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.loginButton);
@@ -70,9 +72,9 @@ namespace GGWP_Store
             this.panel2.Controls.Add(this.keepConnectCheckBox);
             this.panel2.Controls.Add(this.passTextBox);
             this.panel2.Controls.Add(this.userTextBox);
-            this.panel2.Location = new System.Drawing.Point(21, 25);
+            this.panel2.Location = new System.Drawing.Point(21, 19);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(391, 431);
+            this.panel2.Size = new System.Drawing.Size(389, 365);
             this.panel2.TabIndex = 0;
             // 
             // label3
@@ -80,7 +82,7 @@ namespace GGWP_Store
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(40, 123);
+            this.label3.Location = new System.Drawing.Point(31, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 24);
             this.label3.TabIndex = 8;
@@ -91,7 +93,7 @@ namespace GGWP_Store
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(40, 29);
+            this.label2.Location = new System.Drawing.Point(31, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 24);
             this.label2.TabIndex = 7;
@@ -105,7 +107,7 @@ namespace GGWP_Store
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.loginButton.ForeColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(96, 281);
+            this.loginButton.Location = new System.Drawing.Point(96, 269);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(179, 39);
             this.loginButton.TabIndex = 6;
@@ -118,7 +120,7 @@ namespace GGWP_Store
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(72, 356);
+            this.label1.Location = new System.Drawing.Point(72, 327);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 17);
             this.label1.TabIndex = 5;
@@ -130,7 +132,7 @@ namespace GGWP_Store
             this.createAccLink.AutoSize = true;
             this.createAccLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.createAccLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.createAccLink.Location = new System.Drawing.Point(226, 356);
+            this.createAccLink.Location = new System.Drawing.Point(226, 327);
             this.createAccLink.Name = "createAccLink";
             this.createAccLink.Size = new System.Drawing.Size(69, 17);
             this.createAccLink.TabIndex = 4;
@@ -143,7 +145,7 @@ namespace GGWP_Store
             this.fogotPassLink.AutoSize = true;
             this.fogotPassLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.fogotPassLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.fogotPassLink.Location = new System.Drawing.Point(211, 223);
+            this.fogotPassLink.Location = new System.Drawing.Point(211, 230);
             this.fogotPassLink.Name = "fogotPassLink";
             this.fogotPassLink.Size = new System.Drawing.Size(134, 17);
             this.fogotPassLink.TabIndex = 3;
@@ -155,7 +157,7 @@ namespace GGWP_Store
             this.keepConnectCheckBox.AutoSize = true;
             this.keepConnectCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.keepConnectCheckBox.ForeColor = System.Drawing.Color.White;
-            this.keepConnectCheckBox.Location = new System.Drawing.Point(44, 222);
+            this.keepConnectCheckBox.Location = new System.Drawing.Point(44, 229);
             this.keepConnectCheckBox.Name = "keepConnectCheckBox";
             this.keepConnectCheckBox.Size = new System.Drawing.Size(153, 21);
             this.keepConnectCheckBox.TabIndex = 2;
@@ -165,9 +167,10 @@ namespace GGWP_Store
             // passTextBox
             // 
             this.passTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.passTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.passTextBox.ForeColor = System.Drawing.Color.White;
-            this.passTextBox.Location = new System.Drawing.Point(35, 150);
+            this.passTextBox.Location = new System.Drawing.Point(35, 160);
             this.passTextBox.MaxLength = 50;
             this.passTextBox.Multiline = true;
             this.passTextBox.Name = "passTextBox";
@@ -179,21 +182,32 @@ namespace GGWP_Store
             // 
             this.userTextBox.AccessibleDescription = "Email";
             this.userTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.userTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.userTextBox.ForeColor = System.Drawing.Color.White;
-            this.userTextBox.Location = new System.Drawing.Point(35, 56);
+            this.userTextBox.Location = new System.Drawing.Point(35, 79);
             this.userTextBox.MaxLength = 50;
             this.userTextBox.Multiline = true;
             this.userTextBox.Name = "userTextBox";
             this.userTextBox.Size = new System.Drawing.Size(310, 41);
             this.userTextBox.TabIndex = 0;
             // 
+            // erroLogin
+            // 
+            this.erroLogin.AutoSize = true;
+            this.erroLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.erroLogin.ForeColor = System.Drawing.Color.Red;
+            this.erroLogin.Location = new System.Drawing.Point(71, 17);
+            this.erroLogin.Name = "erroLogin";
+            this.erroLogin.Size = new System.Drawing.Size(0, 24);
+            this.erroLogin.TabIndex = 9;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(454, 505);
+            this.ClientSize = new System.Drawing.Size(454, 433);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -221,6 +235,7 @@ namespace GGWP_Store
         private System.Windows.Forms.TextBox userTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label erroLogin;
     }
 }
 

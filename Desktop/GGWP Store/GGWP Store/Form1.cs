@@ -19,8 +19,15 @@ namespace GGWP_Store
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            F_Inicio inicio = new F_Inicio();
-            inicio.Show();
+            erroLogin.Text = "";
+            if(userTextBox.Text == "GGWP" && passTextBox.Text == "GGWP1234"){
+                F_Inicio inicio = new F_Inicio();
+                inicio.Show();
+            }
+            else
+            {
+                erroLogin.Text = "Usuário ou senha incorretos.";
+            }
         }
     }
 }

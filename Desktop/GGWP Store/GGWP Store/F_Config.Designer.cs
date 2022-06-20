@@ -55,8 +55,7 @@ namespace GGWP_Store
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
@@ -72,38 +71,38 @@ namespace GGWP_Store
             // 
             this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.panel7.Location = new System.Drawing.Point(3, 373);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(789, 68);
+            this.panel7.Size = new System.Drawing.Size(791, 68);
             this.panel7.TabIndex = 4;
             // 
             // panel6
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.panel6.Location = new System.Drawing.Point(3, 299);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(789, 68);
+            this.panel6.Size = new System.Drawing.Size(791, 68);
             this.panel6.TabIndex = 3;
             // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Location = new System.Drawing.Point(3, 225);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(789, 68);
+            this.panel5.Size = new System.Drawing.Size(791, 68);
             this.panel5.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -119,9 +118,9 @@ namespace GGWP_Store
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Black;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(16, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(102, 20);
@@ -131,6 +130,7 @@ namespace GGWP_Store
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(14, 9);
@@ -143,20 +143,20 @@ namespace GGWP_Store
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Location = new System.Drawing.Point(3, 151);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(789, 68);
+            this.panel4.Size = new System.Drawing.Size(791, 68);
             this.panel4.TabIndex = 2;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Black;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(16, 40);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 20);
@@ -166,6 +166,7 @@ namespace GGWP_Store
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(14, 9);
@@ -179,20 +180,20 @@ namespace GGWP_Store
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(3, 77);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(789, 68);
+            this.panel3.Size = new System.Drawing.Size(791, 68);
             this.panel3.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Black;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(16, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 20);
@@ -202,6 +203,7 @@ namespace GGWP_Store
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(14, 9);
@@ -214,20 +216,20 @@ namespace GGWP_Store
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(789, 68);
+            this.panel2.Size = new System.Drawing.Size(791, 68);
             this.panel2.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(16, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 20);
@@ -237,6 +239,7 @@ namespace GGWP_Store
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(14, 9);
@@ -247,8 +250,7 @@ namespace GGWP_Store
             // 
             // F_Config
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 517);
             this.Controls.Add(this.panel1);

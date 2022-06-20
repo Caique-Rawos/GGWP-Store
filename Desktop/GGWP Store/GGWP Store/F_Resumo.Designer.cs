@@ -30,9 +30,6 @@ namespace GGWP_Store
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Resumo));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.resumoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notaFiscalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,46 +51,23 @@ namespace GGWP_Store
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.resumoToolStripMenuItem,
-            this.notaFiscalToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // resumoToolStripMenuItem
-            // 
-            this.resumoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.resumoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.resumoToolStripMenuItem.Name = "resumoToolStripMenuItem";
-            this.resumoToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.resumoToolStripMenuItem.Text = "Resumo";
-            // 
-            // notaFiscalToolStripMenuItem
-            // 
-            this.notaFiscalToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.notaFiscalToolStripMenuItem.Name = "notaFiscalToolStripMenuItem";
-            this.notaFiscalToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.notaFiscalToolStripMenuItem.Text = "Nota Fiscal";
-            this.notaFiscalToolStripMenuItem.Click += new System.EventHandler(this.notaFiscalToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GGWP_Store.Properties.Resources.will__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(136, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(143, 133);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,7 +79,7 @@ namespace GGWP_Store
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(300, 86);
+            this.label1.Location = new System.Drawing.Point(176, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 31);
             this.label1.TabIndex = 2;
@@ -116,7 +90,7 @@ namespace GGWP_Store
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(340, 117);
+            this.label2.Location = new System.Drawing.Point(216, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 26);
             this.label2.TabIndex = 3;
@@ -125,6 +99,7 @@ namespace GGWP_Store
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label16);
@@ -142,9 +117,9 @@ namespace GGWP_Store
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(136, 225);
+            this.panel1.Location = new System.Drawing.Point(12, 151);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(535, 448);
+            this.panel1.Size = new System.Drawing.Size(535, 589);
             this.panel1.TabIndex = 5;
             // 
             // label14
@@ -330,40 +305,78 @@ namespace GGWP_Store
             this.label3.TabIndex = 6;
             this.label3.Text = "Resumo";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.label18);
+            this.panel2.Location = new System.Drawing.Point(21, 447);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(490, 113);
+            this.panel2.TabIndex = 22;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::GGWP_Store.Properties.Resources.download;
+            this.pictureBox5.Location = new System.Drawing.Point(398, 21);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(71, 66);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 11;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label17.Location = new System.Drawing.Point(14, 67);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(41, 20);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "1Mb";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.Location = new System.Drawing.Point(14, 21);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(266, 24);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "NotaFiscal_WillSmith#0004.pdf";
+            // 
             // F_Resumo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(800, 702);
+            this.ClientSize = new System.Drawing.Size(567, 561);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "F_Resumo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resumo";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem resumoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem notaFiscalToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -385,5 +398,9 @@ namespace GGWP_Store
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
     }
 }

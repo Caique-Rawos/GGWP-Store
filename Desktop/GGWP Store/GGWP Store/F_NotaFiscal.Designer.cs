@@ -111,9 +111,9 @@ namespace GGWP_Store
             // pictureBox2
             // 
             this.pictureBox2.Image = global::GGWP_Store.Properties.Resources.download;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 25);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 20);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 57);
+            this.pictureBox2.Size = new System.Drawing.Size(71, 66);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -152,8 +152,7 @@ namespace GGWP_Store
             // 
             // F_NotaFiscal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);

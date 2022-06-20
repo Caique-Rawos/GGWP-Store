@@ -19,10 +19,17 @@ namespace GGWP_Store
 
         private void panel2_MouseClick(object sender, MouseEventArgs e)
         {
-            if (Application.OpenForms["F_Resumo"] == null)
+            /*if (Application.OpenForms["F_Resumo"] == null)
             {
                 F_Resumo f_resumo = new F_Resumo();
                 f_resumo.Show();
+            }*/
+
+            if (Application.OpenForms.OfType<F_Resumo>().Count() == 0)
+            {
+                F_Resumo vendaLink = new F_Resumo();
+                vendaLink.MdiParent = F_Inicio.ActiveForm;
+                vendaLink.Show();
             }
         }
     }
