@@ -1,5 +1,6 @@
 <?php
 include "cabecalho.php";
+include "conexao.php";
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +27,32 @@ include "cabecalho.php";
 <body>
 
   <div class="principal">
+
+      <?php 
+      $msg_erro = '';
+      if($_GET['l'] == 1){
+          $login = $_POST['login'];
+          $senha = MD5($_POST['senha']);
+
+          $sql = "SELECT count(email) as email FROM usuario WHERE email = '$login' AND senha = '$senha'";
+          
+          foreach ($conn->query($sql) as $row) {
+              $row['email'];
+          }
+          //die($row['email']);
+          
+          if($row['email'] == 1){
+            echo ("
+            <script>
+            window.location.href = \"perfil.php\";
+            </script>
+            ");
+          }else
+          $msg_erro = 'Email ou senha incorretos';
+          
+
+      }
+      ?>
     
 
   <?php echo $cabeca;?>
@@ -34,18 +61,20 @@ include "cabecalho.php";
     <div class="container-fluid">
         <div class="row justify-content-center mt-5">
             <section class="col-12 col-sm-6 col-md-4"> 
-                <form class="form-container login needs-validation" novalidate>
+                <form class="form-container login needs-validation" novalidate method="post" action="login.php?l=1">
                     <h1 class="text-center corLetra">Login</h1>
+                    <br> <span class="text-center" style="color:red;" name="msg_erro" id="msg_erro"><?php echo($msg_erro) ?></span>
+
                     <div class="form-group">
                         <p class="lead corLetra mt-4">Email</p>
-                        <input type="email" class="form-control" name="email" placeholder="email" required>
+                        <input type="email" class="form-control" id="login" name="login" placeholder="email" required>
                         <div class="invalid-feedback">
                           Valor Invalido!
                         </div>
                     </div>
                     <div>
                         <p class="lead corLetra mt-3">Senha</p>
-                        <input type="password" class="form-control" name="senha" placeholder="senha" required>
+                        <input type="password" class="form-control" id="login" name="senha" placeholder="senha" required>
                         <div class="invalid-feedback">
                           Valor Invalido!
                         </div>
@@ -64,8 +93,9 @@ include "cabecalho.php";
                     
                     <div class="row">
                         <div class="d-grid gap-2 mt-4">
-                            <!--<button class="btn btn-outline-light">Entrar</button>-->
-                            <a href="perfil.php" class="btn btn-outline-light" role="button">Entrar</a>
+                          <input type="submit" class="btn btn-outline-light" value="Entrar">
+                            <!--<button class="btn btn-outline-light">Entrar</button>
+                            <a href="perfil.php" class="btn btn-outline-light" role="button">Entrar</a>-->
                         </div>
                     </div>
 

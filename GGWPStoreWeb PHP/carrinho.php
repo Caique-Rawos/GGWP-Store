@@ -38,7 +38,7 @@ include "cabecalho.php";
                 </div>
 
               <div class="col-lg-2 col-6 col-md-4">
-                <a class="categorias" href="comprarColecionaveis.php">
+                <a class="categorias" href="produto.php?id_prod=1">
                 <div class="bordaItens">
                     <div class="">
                         <img src="imagens/foto_colecionaveis.png" class="card-img-top" alt="Funkopop Star Wars"></a>
@@ -53,7 +53,7 @@ include "cabecalho.php";
             </div>
 
               <div class="col-lg-2 col-6 col-md-4">
-                <a class="categorias" href="comprarGames.php">
+                <a class="categorias" href="produto.php?id_prod=2">
                 <div class="bordaItens">
                     <div class="">
                         <img src="imagens/foto_games.png" class="card-img-top" alt="The last of Us 2"></a>
@@ -68,7 +68,7 @@ include "cabecalho.php";
             </div>
 
               <div class="col-lg-2 col-6 col-md-4">
-                <a class="categorias" href="comprarComputadores.php">
+                <a class="categorias" href="produto.php?id_prod=3">
                 <div class="bordaItens">
                     <div class="">
                         <img src="imagens/foto_computadores.png" class="card-img-top" alt="Notebook gueimer"></a>
@@ -83,7 +83,7 @@ include "cabecalho.php";
             </div>
 
               <div class="col-lg-2 col-6 col-md-4">
-                <a class="categorias" href="comprarPerifericos.php">
+                <a class="categorias" href="produto.php?id_prod=4">
                 <div class="bordaItens">
                     <div class="">
                         <img src="imagens/foto_perifericos.png" class="card-img-top" alt="Mouse Gamer Top"></a>
@@ -98,7 +98,7 @@ include "cabecalho.php";
             </div>
 
               <div class="col-lg-2 col-6 col-md-4">
-                <a class="categorias" href="comprarHqs.php">
+                <a class="categorias" href="produto.php?id_prod=5">
                 <div class="bordaItens">
                     <div class="">
                         <img src="imagens/foto_hqs.png" class="card-img-top" alt="HQ Batman"></a>

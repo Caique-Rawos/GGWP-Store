@@ -31,7 +31,7 @@
                     
                 </form>
               </div>
-                    <a href='login.php'><button class='btn' type='submit'><i class='fa-solid fa-user fa-xl'></i></button></a>
+                    <a href='login.php?l=0'><button class='btn' type='submit'><i class='fa-solid fa-user fa-xl'></i></button></a>
                     <a href='carrinho.php'><button class='btn' type='submit'><i class='fa-solid fa-cart-arrow-down fa-xl'></i></button></a>
               <div>
                       <button class='btn' onclick='darkMode()'><i class='fa-solid fa-moon fa-xl'></i></button> 
