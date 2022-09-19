@@ -35,8 +35,18 @@ $htmlProd = '<div class="container mt-5 conteudoPagina">
   </div>
   <div class="col">
     <h1 class="display-5 corLetra mt-2">The last of Us 2</h1><br>
-    <p><i class="fa-solid fa-star fa-xl amarelo "></i><i class="fa-solid fa-star fa-xl amarelo"></i><i class="fa-solid fa-star fa-xl amarelo"></i><i class="fa-solid fa-star fa-xl amarelo"></i><i class="fa-solid fa-star fa-xl amarelo"></i></p>
-    <p class="display-6 corLetra mt-4">'. $preco .'</p><br>
+    <!--STAR INICIO-->
+              <img src="imagens/star1.png" onclick="avaliar(1, 1)" id="s1">
+              
+              <img src="imagens/star1.png" onclick="avaliar(2, 1)" id="s2">
+              
+              <img src="imagens/star1.png" onclick="avaliar(3, 1)" id="s3">
+              
+              <img src="imagens/star1.png" onclick="avaliar(4, 1)" id="s4">
+              
+              <img src="imagens/star1.png" onclick="avaliar(5, 1)" id="s5">
+      <!--STAR FIM-->
+      <p class="display-6 corLetra mt-4">'. $preco .'</p><br>
     <p class="lead mt-2 corLetra">Descrição</p>
     <p class="corLetra"> ' . $desc . '</p>
     <div class="d-grid gap-2 col-6 mx-auto">

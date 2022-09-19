@@ -1,4 +1,5 @@
 <?php
+include_once "session.php";
 include "cabecalho.php";
 ?>
 
@@ -29,7 +30,19 @@ include "cabecalho.php";
           </div>
           <div class="col-lg-3 col-md-8 col-sm-3 marginPerfil">
             <h1 class="corLetra lead mt-4">@GGWP Store</h1>
-            <i class="fa-solid fa-star amarelo "></i><i class="fa-solid fa-star amarelo"></i><i class="fa-solid fa-star amarelo"></i><i class="fa-solid fa-star amarelo"></i><i class="fa-solid fa-star amarelo"></i><i class="fa-solid fa-star amarelo"></i>
+          <!--STAR INICIO-->
+          <img src="imagens/star1.png" width="20px" onclick="avaliar(1, 2)" id="s1">
+              
+              <img src="imagens/star1.png" width="20px" onclick="avaliar(2, 2)" id="s2">
+              
+              <img src="imagens/star1.png" width="20px" onclick="avaliar(3, 2)" id="s3">
+              
+              <img src="imagens/star1.png" width="20px" onclick="avaliar(4, 2)" id="s4">
+              
+              <img src="imagens/star1.png" width="20px" onclick="avaliar(5, 2)" id="s5">
+
+              <img src="imagens/star1.png" width="20px" onclick="avaliar(6, 2)" id="s6">
+      <!--STAR FIM-->
           </div>
           
           <div class="col-lg-3 col-md-6 col-sm-6">

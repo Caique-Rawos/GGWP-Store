@@ -32,6 +32,7 @@ namespace GGWP_Store
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.erroLogin = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace GGWP_Store
             this.keepConnectCheckBox = new System.Windows.Forms.CheckBox();
             this.passTextBox = new System.Windows.Forms.TextBox();
             this.userTextBox = new System.Windows.Forms.TextBox();
-            this.erroLogin = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +76,16 @@ namespace GGWP_Store
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(389, 365);
             this.panel2.TabIndex = 0;
+            // 
+            // erroLogin
+            // 
+            this.erroLogin.AutoSize = true;
+            this.erroLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.erroLogin.ForeColor = System.Drawing.Color.Red;
+            this.erroLogin.Location = new System.Drawing.Point(71, 17);
+            this.erroLogin.Name = "erroLogin";
+            this.erroLogin.Size = new System.Drawing.Size(0, 24);
+            this.erroLogin.TabIndex = 9;
             // 
             // label3
             // 
@@ -191,16 +201,6 @@ namespace GGWP_Store
             this.userTextBox.Name = "userTextBox";
             this.userTextBox.Size = new System.Drawing.Size(310, 41);
             this.userTextBox.TabIndex = 0;
-            // 
-            // erroLogin
-            // 
-            this.erroLogin.AutoSize = true;
-            this.erroLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.erroLogin.ForeColor = System.Drawing.Color.Red;
-            this.erroLogin.Location = new System.Drawing.Point(71, 17);
-            this.erroLogin.Name = "erroLogin";
-            this.erroLogin.Size = new System.Drawing.Size(0, 24);
-            this.erroLogin.TabIndex = 9;
             // 
             // Login
             // 

@@ -1,4 +1,5 @@
-<?php 
+<?php
+include_once "session.php"; 
 include "cabecalho.php";
 ?>
 

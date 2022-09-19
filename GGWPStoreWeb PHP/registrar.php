@@ -1,5 +1,7 @@
 <?php
+include_once "session.php";
 include "cabecalho.php";
+include "conexao.php";
 ?>
 
 <!DOCTYPE html>
@@ -29,38 +31,86 @@ include "cabecalho.php";
     
 
   <?php echo $cabeca;?>
+  <?php
+if ($_SERVER["REQUEST_METHOD"] === 'POST') {
+  $msg_erro = '';
+  $erro = 0;
+
+      $email = trim(strtoupper($_POST['email']));
+      //die($email);
+      $username = $_POST['username'];
+      $senha = MD5($_POST['senha']);
+      $senha_desk = $_POST['senha'];
+
+      $sql = "SELECT count(email) as email FROM usuario_ggwp WHERE email = '$email'";
+      //$count = 0;
+
+      //$res = $conn->query($sql);
+      //$count = $res->fetchColumn();
+      
+      foreach ($conn->query($sql) as $row){
+         $row['email'];
+      }
+      //die($row['email']);
+      
+      if((trim($email) != "") && (trim($senha) != "") && (trim($username) != "")){
+        $hoje = date('Y/m/d');
+        $sql_insert = "INSERT INTO usuario_ggwp values(0, '$email', '$username', '$senha', '$hoje');
+                       INSERT INTO usuario_desktop_ggwp values(0, '$email', '$senha_desk');";
+        try{
+          if($row['email'] == 0){
+            $conn -> query($sql_insert);
+          echo ("
+          <script>
+          window.location.href = \"perfil.php\";
+          </script>
+          ");
+          }else{
+            $msg_erro = "Email já existente";
+          }
+        }catch (exception $e){
+          $msg_erro = "Como você conseguiu tamanha proeza?";
+          //die($e->getMessage());
+        }
+      }else
+      $msg_erro = 'Email, username ou senha invalidos!';
+}else{
+  $msg_erro = "";
+}
+?>
 
   <div class="centro-tela conteudoPagina">
     <div class="container-fluid">
         <div class="row justify-content-center mt-5">
             <section class="col-12 col-sm-6 col-md-4"> 
-                <form action="sign in" class="form-container login needs-validation" novalidate>
+                <form method="POST" class="form-container login needs-validation" novalidate>
                     <h1 class="text-center corLetra">Registrar</h1>
                     <div class="form-group">
+                      <span id="erro" name="erro"><?php echo($msg_erro)?></span>
                         <p class="lead corLetra mt-4">Email</p>
-                        <input type="email" class="form-control" name="email" placeholder="email" required>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="email" required>
                         <div class="invalid-feedback">
-                          Valor Invalido!
+                          Email Invalido!
                         </div>
                     </div>
                     <div>
                         <p class="lead corLetra mt-3">Username:</p>
-                        <input type="text" class="form-control" name="nome" placeholder="username" required>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="username" required>
                         <div class="invalid-feedback">
-                          Valor Invalido!
+                          Defina um nome de usuario!
                         </div>
                     </div>
                     <div>
                         <p class="lead corLetra mt-3">Senha</p>
-                        <input type="password" class="form-control" name="senha" placeholder="senha" required>
+                        <input type="password" class="form-control" name="senha" id="senha" placeholder="senha" required>
                         <div class="invalid-feedback">
-                          Valor Invalido!
+                          Defina sua senha!
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="d-grid gap-2 mt-4">
-                            <button class="btn btn-outline-light">Registrar</button>
+                            <button type="submit" class="btn btn-outline-light">Registrar</button>
                         </div>
                     </div>
 

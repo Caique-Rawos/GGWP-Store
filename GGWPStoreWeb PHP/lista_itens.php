@@ -1,4 +1,5 @@
 <?php
+include_once "session.php";
 include "cabecalho.php";
 include "id_listaProd.php";
 $qntd = 0;

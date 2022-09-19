@@ -144,3 +144,163 @@ C:\Users\User\Desktop\Repositorios GitHub\GGWP Store\Desktop\GGWP Store\GGWP Sto
 C:\Users\User\Desktop\Repositorios GitHub\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Repositorios GitHub\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
 C:\Users\User\Desktop\Repositorios GitHub\GGWP Store\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NotaFiscal.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Chat.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Community.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Config.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Help.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Inicio.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NewProduct.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Products.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Resumo.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserInfo.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserProfile.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Vendas.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
+C:\Users\aluno\Downloads\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NotaFiscal.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Chat.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Community.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Config.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Help.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Inicio.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NewProduct.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Products.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Resumo.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserInfo.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserProfile.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Vendas.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\BouncyCastle.Crypto.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\Google.Protobuf.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Hash.xxHash.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\MySql.Data.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Buffers.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Memory.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Numerics.Vectors.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\Ubiety.Dns.Core.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\ZstdNet.dll
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\BouncyCastle.Crypto.xml
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\Google.Protobuf.pdb
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\Google.Protobuf.xml
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.xml
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Hash.xxHash.xml
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\MySql.Data.xml
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Buffers.xml
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Memory.xml
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Numerics.Vectors.xml
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Cotil\C#\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CopyComplete
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\Google.Protobuf.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\MySql.Data.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Buffers.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Memory.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\ZstdNet.dll
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\Google.Protobuf.pdb
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\Google.Protobuf.xml
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\MySql.Data.xml
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Buffers.xml
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Memory.xml
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NotaFiscal.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Chat.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Community.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Config.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Help.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Inicio.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NewProduct.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Products.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Resumo.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserInfo.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserProfile.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Vendas.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CopyComplete
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
+C:\Users\FireBoss\Desktop\tcc\GGWP-Store-main\GGWP-Store-main\Desktop\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe.config
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\GGWP Store.exe
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\GGWP Store.pdb
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\Google.Protobuf.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\MySql.Data.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\System.Buffers.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\System.Memory.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\ZstdNet.dll
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\Google.Protobuf.pdb
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\Google.Protobuf.xml
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\MySql.Data.xml
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\System.Buffers.xml
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\System.Memory.xml
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.AssemblyReference.cache
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Login.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NotaFiscal.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Chat.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Community.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Config.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Help.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Inicio.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_NewProduct.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Products.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Resumo.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserInfo.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_UserProfile.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.F_Vendas.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP_Store.Properties.Resources.resources
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.GenerateResource.cache
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CoreCompileInputs.cache
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP Store.csproj.CopyComplete
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP Store.exe
+C:\Users\FireBoss\Desktop\tcc\atualizado\GGWP Store\GGWP Store\obj\Debug\GGWP Store.pdb

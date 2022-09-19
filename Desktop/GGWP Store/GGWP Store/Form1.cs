@@ -15,11 +15,31 @@ namespace GGWP_Store
         public Login()
         {
             InitializeComponent();
+
+            if (Conexao.getConexao("143.106.241.3", "cl201456", "cl201456", "cl*06112004"))
+                Console.WriteLine("Conectado");
+            else
+                Console.WriteLine("Erro de conexão");
+
         }
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            erroLogin.Text = "";
+            int tipo = Conexao.login(userTextBox.Text.ToUpper(), passTextBox.Text);
+
+            if (tipo == 0)
+            {
+                MessageBox.Show("Usuário/Senha inválidos");
+            }else
+            {
+                F_Inicio inicio = new F_Inicio();
+                inicio.Show();
+
+            }
+
+          
+            
+            /*erroLogin.Text = "";
             if(userTextBox.Text == "GGWP" && passTextBox.Text == "GGWP1234"){
                 F_Inicio inicio = new F_Inicio();
                 inicio.Show();
@@ -27,7 +47,8 @@ namespace GGWP_Store
             else
             {
                 erroLogin.Text = "Usuário ou senha incorretos.";
-            }
+            }*/
         }
+
     }
 }

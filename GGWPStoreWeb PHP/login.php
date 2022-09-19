@@ -1,6 +1,15 @@
 <?php
+include_once "session.php";
 include "cabecalho.php";
 include "conexao.php";
+
+if($_SESSION['login'] != ""){
+  echo ("
+        <script>
+        window.location.href = \"perfil.php\";
+        </script>
+        ");
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,32 +36,33 @@ include "conexao.php";
 <body>
 
   <div class="principal">
+  <?php
+if ($_SERVER["REQUEST_METHOD"] === 'POST') {
+  $msg_erro = '';
 
-      <?php 
-      $msg_erro = '';
-      if($_GET['l'] == 1){
-          $login = $_POST['login'];
-          $senha = MD5($_POST['senha']);
+      $login = strtoupper($_POST['login']);
+      $senha = MD5($_POST['senha']);
 
-          $sql = "SELECT count(email) as email FROM usuario WHERE email = '$login' AND senha = '$senha'";
-          
-          foreach ($conn->query($sql) as $row) {
-              $row['email'];
-          }
-          //die($row['email']);
-          
-          if($row['email'] == 1){
-            echo ("
-            <script>
-            window.location.href = \"perfil.php\";
-            </script>
-            ");
-          }else
-          $msg_erro = 'Email ou senha incorretos';
-          
-
+      $sql = "SELECT count(email) as email FROM usuario_ggwp WHERE email = '$login' AND senha = '$senha'";
+      
+      foreach ($conn->query($sql) as $row) {
+          $row['email'];
       }
-      ?>
+      //die($row['email']);
+      
+      if($row['email'] == 1){
+        $_SESSION['login'] = $login;
+        echo ("
+        <script>
+        window.location.href = \"perfil.php\";
+        </script>
+        ");
+      }else
+      $msg_erro = 'Email ou senha incorretos';
+}else{
+  $msg_erro = "";
+}
+?>
     
 
   <?php echo $cabeca;?>
@@ -61,7 +71,7 @@ include "conexao.php";
     <div class="container-fluid">
         <div class="row justify-content-center mt-5">
             <section class="col-12 col-sm-6 col-md-4"> 
-                <form class="form-container login needs-validation" novalidate method="post" action="login.php?l=1">
+                <form class="form-container login needs-validation" novalidate method="POST">
                     <h1 class="text-center corLetra">Login</h1>
                     <br> <span class="text-center" style="color:red;" name="msg_erro" id="msg_erro"><?php echo($msg_erro) ?></span>
 
@@ -123,6 +133,9 @@ include "conexao.php";
 </div><!--Div para corrigir o rodapé-->
 
 <!--Inicio Script-->
+
+
+
   
 
 <script type="text/javascript">

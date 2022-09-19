@@ -1,6 +1,5 @@
 <?php
-  session_start();
-  setcookie('meu_cookie', 'valor do cookie');
+  include_once "session.php";
   include "cabecalho.php";
   include "conexao.php";
 ?>
@@ -23,6 +22,7 @@
 <body>
 
 <?php echo $cabeca; ?>
+
       <!-- Conteudo Principal-->
 
       <!--INICIO CARROUSEL-->

@@ -1,4 +1,5 @@
 <?php
+include_once "session.php";
 include "cabecalho.php";
 include "id_prod.php";
 ?>
@@ -25,7 +26,7 @@ include "id_prod.php";
 
       <!-- Conteudo Principal-->
 
-        <?php echo $htmlProd; ?>
+        <?php echo $htmlProd;?>
 
       <!-- Fim conteudo Principal-->
 
