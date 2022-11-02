@@ -55,11 +55,12 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
       
       if((trim($email) != "") && (trim($senha) != "") && (trim($username) != "")){
         $hoje = date('Y/m/d');
-        $sql_insert = "INSERT INTO usuario_ggwp values(0, '$email', '$username', '$senha', '$hoje');
-                       INSERT INTO usuario_desktop_ggwp values(0, '$email', '$senha_desk');";
+        $sql_insert = "INSERT INTO usuario_ggwp (id_usuario, email, username, senha, data) values(0, '$email', '$username', '$senha', '$hoje');
+                       INSERT INTO usuario_desktop_ggwp (id_usuario, email, senha) values(0, '$email', '$senha_desk');";
         try{
           if($row['email'] == 0){
             $conn -> query($sql_insert);
+            $_SESSION['login'] = $email;
           echo ("
           <script>
           window.location.href = \"perfil.php\";

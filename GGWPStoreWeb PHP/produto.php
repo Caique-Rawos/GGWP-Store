@@ -3,7 +3,6 @@ include_once "session.php";
 include "cabecalho.php";
 include "id_prod.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,13 +21,9 @@ include "id_prod.php";
 <body>
   <div class="principal">
 
-   <?php echo $cabeca; ?>
+  <?php echo $cabeca; ?>
 
-      <!-- Conteudo Principal-->
-
-        <?php echo $htmlProd;?>
-
-      <!-- Fim conteudo Principal-->
+  <?php echo $htmlProd;?>
 
       <!--INICIO FOOTER-->
     <footer id="sticky-footer" class="flex-shrink-0 py-2 bg-dark text-white-50 mt-5">
@@ -39,6 +34,7 @@ include "id_prod.php";
     <!--FIM FOOTER-->
   </div>
 
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
 </body>

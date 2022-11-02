@@ -1,4 +1,27 @@
 <?php
+
+function getFoto(){
+  include "conexao.php";
+  $email = $_SESSION['login'];
+  if($email == ""){
+    return "<a href='login.php'>
+    <button class='btn' type='submit'><i class='fa-solid fa-user fa-xl'></i></button>
+    </a>";
+  }else{
+    $sql = "SELECT id_usuario, foto FROM usuario_ggwp WHERE email = '$email';";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+
+    while ($row = $stmt->fetch()) {
+      if($row['foto'] != null){
+        return "<img onclick='window.location.href = \"perfil.php\";' style='width: 32px; height: 32px; border-radius: 50%;' src='data:image;base64,".base64_encode($row["foto"])."'>";
+      }else{
+        return "<img onclick='window.location.href = \"perfil.php\";' style='width: 32px; height: 32px;' src='imagens/foto.png'>";
+      } 
+    }
+  }
+}
+
     $cabeca = "<!--INICIO NAVBAR-->
     <nav class='navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light '>
             <div class='container-fluid'>
@@ -22,8 +45,8 @@
                       <li><a class='dropdown-item' href='lista_itens.php?id=5'><span>HQ's</span></a></li>
                     </ul>
                   </li>
-                  <li class='nav-item'>
-                    <a class='nav-link' aria-current='page' href='quemSomos.php'><span class='corLetra-cabecalho'>Quem Somos</span></li></a>
+                  <!--<li class='nav-item'>
+                  <a class='nav-link' aria-current='page' href='quemSomos.php'><span class='corLetra-cabecalho'>Quem Somos</span></li></a>-->
                 </ul>
                 <form class='d-flex'>
                   <input class='form-control me-2' type='search' placeholder='Buscar' aria-label='Search'>
@@ -31,7 +54,9 @@
                     
                 </form>
               </div>
-                    <a href='login.php'><button class='btn' type='submit'><i class='fa-solid fa-user fa-xl'></i></button></a>
+                    ";
+                    $cabeca .= getFoto();
+                    $cabeca .= "
                     <a href='carrinho.php'><button class='btn' type='submit'><i class='fa-solid fa-cart-arrow-down fa-xl'></i></button></a>
               <div>
                       <button class='btn' onclick='darkMode()'><i class='fa-solid fa-moon fa-xl'></i></button> 

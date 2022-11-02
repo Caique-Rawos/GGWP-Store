@@ -1,6 +1,44 @@
 <?php
 include_once "session.php";
+include_once "conexao.php";
 include "cabecalho.php";
+$count = 0;
+
+if($_SESSION['login'] == ""){
+  echo ("
+        <script>
+        window.location.href = \"login.php\";
+        </script>
+        ");
+}
+
+$sql = "SELECT * FROM usuario_ggwp WHERE email = '{$_SESSION['login']}'";
+try{
+  foreach ($conn->query($sql) as $row) {
+    $username = $row['username'];
+    $data = $row['data'];
+    if($row['foto'] == null){
+      $foto = "imagens/foto.png";
+    }else{
+      $foto = "data:image;base64," . base64_encode($row["foto"]);
+    }
+    $count++;
+}
+    $data = str_replace("-", "/", $data);
+    $data = date('d/m/Y', strtotime($data));
+//die($row['email']);
+
+if($count != 1){
+  die("Erro ao encontrar perfil");
+  $_SESSION['login'] = "";
+
+}
+
+}catch(exception $e){
+  die("Erro ao executar sql");
+  $_SESSION['login'] = "";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -26,10 +64,10 @@ include "cabecalho.php";
       <div class="container">
         <div class="row">
           <div class="col-xxl-1 col-lg-2 col-md-2 col-sm-3">
-            <img src="imagens/ggwp.icon.jpg" class="rounded-circle border mt-4 image-perfil" alt="">
+            <img src="<?=$foto?>" class="rounded-circle border mt-4 image-perfil" alt="">
           </div>
           <div class="col-lg-3 col-md-8 col-sm-3 marginPerfil">
-            <h1 class="corLetra lead mt-4">@GGWP Store</h1>
+            <h1 class="corLetra lead mt-4">@<?=$username?></h1>
           <!--STAR INICIO-->
           <img src="imagens/star1.png" width="20px" onclick="avaliar(1, 2)" id="s1">
               
@@ -51,7 +89,7 @@ include "cabecalho.php";
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6">
             <h1 class="lead corLetra mt-4"><i class="fa-solid fa-people-group corLetra"></i> &nbsp; Seguidores: 0</h1>
-            <h1 class="lead corLetra mt-4"><i class="fa-solid fa-stopwatch corLetra"></i> &nbsp; Vendendo Desde: 23/04/2022</h1>
+            <h1 class="lead corLetra mt-4"><i class="fa-solid fa-stopwatch corLetra"></i> &nbsp; Vendendo Desde: <?=$data?></h1>
          </div>
         </div>
         <div class="row">
@@ -68,7 +106,7 @@ include "cabecalho.php";
             <a class="categorias" href="#principal"><h1 class="corLetra lead text-center">Pagina Principal</h1></a>
           </div>
           <div class="col-6 col-lg-1 col-md-3">
-            <a class="categorias" href="#produtos"><h1 class="corLetra lead text-center">Produtos</h1></a>
+            <a class="categorias" href="cadastro_prod.php"><h1 class="corLetra lead text-center">Produtos</h1></a>
           </div><hr class="mt-2">
         </div>
       </div>

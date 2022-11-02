@@ -35,86 +35,14 @@ include "cabecalho.php";
           <div class="container-fluid">
             <div class="row">
                 
-                <div class="col-lg-1">
-                </div>
+                <!--<div class="col-lg-1">
+                </div>-->
 
-              <div class="col-lg-2 col-6 col-md-4">
-                <a class="categorias" href="produto.php?id_prod=1">
-                <div class="bordaItens">
-                    <div class="">
-                        <img src="imagens/foto_colecionaveis.png" class="card-img-top" alt="Funkopop Star Wars"></a>
-                        <div class="card-body">
-                            <p id="texto" class=""></p>
-                            <p id="texto" class=" lead mt-2">Funkopop Star Wars</p>
-                            <p id="texto" class=" lead mt-2">R$ 79,99</p>
-                            <p id="texto" class=" lead mt-2">Quant: &nbsp;<i id="i" class="fa-solid fa-angle-left fa-xs"></i> 1 <i id="i" class="fa-solid fa-angle-right fa-xs"></i></p>
-                        </div>
-                      </div>
-                </div>
-            </div>
+              <?php include "id_carrinho.php"?>
 
-              <div class="col-lg-2 col-6 col-md-4">
-                <a class="categorias" href="produto.php?id_prod=2">
-                <div class="bordaItens">
-                    <div class="">
-                        <img src="imagens/foto_games.png" class="card-img-top" alt="The last of Us 2"></a>
-                        <div class="card-body">
-                            <p id="texto" class=""></p>
-                            <p id="texto" class=" lead">The last of Us 2</p>
-                            <p id="texto" class=" lead mt-2">R$ 79,99</p>
-                            <p id="texto" class=" lead mt-2">Quant: &nbsp;<i id="i" class="fa-solid fa-angle-left fa-xs"></i> 1 <i id="i" class="fa-solid fa-angle-right fa-xs"></i></p>
-                        </div>
-                      </div>
-                </div>
-            </div>
-
-              <div class="col-lg-2 col-6 col-md-4">
-                <a class="categorias" href="produto.php?id_prod=3">
-                <div class="bordaItens">
-                    <div class="">
-                        <img src="imagens/foto_computadores.png" class="card-img-top" alt="Notebook gueimer"></a>
-                        <div class="card-body">
-                            <p id="texto" class=" lead"></p>
-                            <p id="texto" class=" lead">Notebook gueimer</p>
-                            <p id="texto" class=" lead mt-2">R$ 79,99</p>
-                            <p id="texto" class=" lead mt-2">Quant: &nbsp;<i id="i" class="fa-solid fa-angle-left fa-xs"></i> 1 <i id="i" class="fa-solid fa-angle-right fa-xs"></i></p>
-                        </div>
-                      </div>
-                </div>
-            </div>
-
-              <div class="col-lg-2 col-6 col-md-4">
-                <a class="categorias" href="produto.php?id_prod=4">
-                <div class="bordaItens">
-                    <div class="">
-                        <img src="imagens/foto_perifericos.png" class="card-img-top" alt="Mouse Gamer Top"></a>
-                        <div class="card-body">
-                            <p id="texto" class=" lead"></p>
-                            <p id="texto" class=" lead">Mouse Gamer Top</p>
-                            <p id="texto" class=" lead mt-2">R$ 79,99</p>
-                            <p id="texto" class=" lead mt-2">Quant: &nbsp;<i id="i" class="fa-solid fa-angle-left fa-xs"></i> 1 <i id="i" class="fa-solid fa-angle-right fa-xs"></i></p>
-                        </div>
-                      </div>
-                </div>
-            </div>
-
-              <div class="col-lg-2 col-6 col-md-4">
-                <a class="categorias" href="produto.php?id_prod=5">
-                <div class="bordaItens">
-                    <div class="">
-                        <img src="imagens/foto_hqs.png" class="card-img-top" alt="HQ Batman"></a>
-                        <div class="card-body">
-                            <p id="texto" class=" lead"></p>
-                            <p id="texto" class=" lead">HQ Batman</p>
-                            <p id="texto" class=" lead mt-2">R$ 79,99</p>
-                            <p id="texto" class=" lead mt-2">Quant: &nbsp;<i id="i" class="fa-solid fa-angle-left fa-xs"></i> 1 <i id="i" class="fa-solid fa-angle-right fa-xs"></i></p>
-                        </div>
-                      </div>
-                </div>
-            </div>
-
-                <div class="col-lg-1">
-                </div>
+                <!--<div class="col-lg-1">
+                </div>-->
+                
               </div>
             </div>
           </div>

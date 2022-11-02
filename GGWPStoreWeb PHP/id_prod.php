@@ -1,29 +1,74 @@
 <?php 
+include "conexao.php";
 $id_prod = $_GET['id_prod'];
 
-if($id_prod == 1){
-$foto = "imagens/foto_colecionaveis.png";
-$preco = "R$ 79,99";
-$desc = "Se está querendo inovar seu ambiente ou iniciar uma coleção, a linha Pop! ™ da empresa norte americana Funko®, tem tudo que você precisa. Desde os pequenos pins até os enormes Pops de 18 polegadas (46cm), eles vão dar uma cara nova a sua casa com seus personagens favoritos!";
-}else if($id_prod == 2){
-$foto = "imagens/foto_games.png";
-$preco = "R$ 79,99";
-$desc = "The Last of Us é um jogo eletrônico de ação-aventura e sobrevivência desenvolvido pela Naughty Dog e publicado pela Sony Computer Entertainment.";
-}else if($id_prod == 3){
-$foto = "imagens/foto_computadores.png";
-$preco = "R$ 79,99";
-$desc = "Notebook Gamer Acer Nitro 5 Intel Core i5 8GB 1TB - 128GB SSD 15.6 NVIDIA GeForce GTX 1650";
-}else if($id_prod == 4){
-$foto = "imagens/foto_perifericos.png";
-$preco = "R$ 79,99";
-$desc = "Mouse Sensor Pixart 3200 DPI. com gel nas laterais proporcionando melhor conforto. Desenvolvido com 6 Botoes incluindo seletor de DPI e Scroll. 7 cores LED pulsante. com design anatômico. cabo 1.5m e interruptores Huano para 5 milhões de cliques. garantindo alta durabilidade.";
-}else{
-$foto = "imagens/foto_hqs.png";
-$preco = "R$ 79,99";
-$desc = "“A CORTE DAS CORUJAS VIGIA VIGIA o TEMPO INTEIRO” Batman já ouviu falar sobre o conto da Corte das Corujas. Há séculos reunindo-se nas sombras e usando a ave de rapina noturna como seu cartão de visita, é dito que os membros dessa temível e poderosa cabala são os verdadeiros donos de Gotham City.";
+$sql = "SELECT * FROM produto_ggwp WHERE id_produto = $id_prod;";
+               $stmt = $conn->prepare($sql);
+               $stmt->execute();
+              $cards = "";
+while ($row = $stmt->fetch()) {
+  $htmlProd = '
+<!-- Conteudo Principal-->
+<div class="container mt-5 mb-5"> 
+<div class="body">  
+  <div class="row g-0"> 
+    <div class="col-md-6 "> 
+      <div class="d-flex flex-column justify-content-center"> 
+        <div class="main_image">  
+          <img src="data:image;base64,'.base64_encode($row["foto"]).'" id="main_product_image" width="350"> 
+        </div>  
+        <div class="mt-3"></div>
+        <div class="thumbnail_images">  
+          <ul id="thumbnail"> 
+
+          <li><img onclick="changeImage(this)" src="data:image;base64,'.base64_encode($row["foto"]).'" width="70"></li> 
+          <li><img onclick="changeImage(this)" src="data:image;base64,'.base64_encode($row["foto"]).'" width="70"></li>
+          <li><img onclick="changeImage(this)" src="data:image;base64,'.base64_encode($row["foto"]).'" width="70"></li> 
+          <li><img onclick="changeImage(this)" src="data:image;base64,'.base64_encode($row["foto"]).'" width="70"></li>
+
+        </ul> 
+
+        </div>  
+      </div>  
+    </div>  
+    <div class="col-md-6">  
+      <div class="p-3 right-side">
+        <div class="d-flex justify-content-between align-items-center"> 
+          <h3>'.$row['nome'].'</h3>  
+        </div>  
+        <div class="mt-2 pr-3 content"> 
+          <p>'.$row['descricao'].'</p> 
+        </div>
+        <br>  
+        <h3>R$ '.number_format($row['preco'],2,",",".").'</h3>  
+
+         <!--STAR INICIO-->
+         <img src="imagens/star1.png" width="30px" onclick="avaliar(1, 1)" id="s1">
+         <img src="imagens/star1.png" width="30px" onclick="avaliar(2, 1)" id="s2">
+         <img src="imagens/star1.png" width="30px" onclick="avaliar(3, 1)" id="s3">
+         <img src="imagens/star1.png" width="30px" onclick="avaliar(4, 1)" id="s4">
+         <img src="imagens/star1.png" width="30px" onclick="avaliar(5, 1)" id="s5">
+        <!--STAR FIM--> 
+
+            <br>
+
+             <a onclick="mandaCarinho('.$id_prod.')" class="btn btn-outline-success mt-5" role="button"><h1 class=" display-6">Comprar</h1></a>
+  
+              </div>  
+            </div>  
+          </div>  
+        </div>  
+      </div> 
+    </div>
+
+<!-- Fim conteudo Principal-->';
 }
 
-$htmlProd = '<div class="container mt-5 conteudoPagina">
+
+/*
+
+
+      <div class="container mt-5 conteudoPagina">
 <div class="row">
   <div class="col-2 col-sm-1">
     <img src="' . $foto . '" class="mt-2 imagem-miniatura" alt=""><br>
@@ -55,5 +100,6 @@ $htmlProd = '<div class="container mt-5 conteudoPagina">
     </div>
   </div>
 </div>
-</div>';
+</div>
+      */
 ?>

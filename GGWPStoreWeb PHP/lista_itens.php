@@ -1,9 +1,6 @@
 <?php
 include_once "session.php";
 include "cabecalho.php";
-include "id_listaProd.php";
-$qntd = 0;
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -18,11 +15,14 @@ $qntd = 0;
     <link rel="icon" type="image/x-icon" href="imagens/favicon-32x32.ico">
     <script src="javaScript/java.js"></script>
 
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
     <title>GGWP Store</title>
 </head>
 <body>
+
 <?php echo $cabeca;?>
-      <!-- Conteudo Principal-->
 
       <!--INICIO CARROUSEL-->
       <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel">
@@ -53,49 +53,21 @@ $qntd = 0;
       </div>
       <!--FIM CARROUSEL-->
 
-      <section>
-      <aside class="bordaItens mt-4">
-          <h1 class="corLetra text-center mt-3">Filtrar por:</h1>
-        <p class="lead corLetra mt-4">Valor</p>
-        <div class="input-group mb-3" >
-            <input type="text" class="form-control"  placeholder="De: R$" aria-label="Username">
-            <input type="text" class="form-control" placeholder="Até: R$" aria-label="Server">
-          </div>
-        <hr class="mt-2">
+      
 
-        <p class="lead corLetra mt-2">Condição</p>
-              <input type="checkbox" id="valor" name="valor">
-              <label for="cond" class="corLetra mt-1">Itens Novos</label><br>
-              <input type="checkbox" id="valor" name="valor">
-              <label for="cond" class="corLetra mt-1">Itens Semi-Novos</label>
+     <!-- Começo do conteudo principal -->
+<section class="section-products" >
+  <div class="container">
+      <div class="row">
+         
+      <?php include "id_listaProd.php"; ?>
+          
+      </div>
+  </div>
+</section>
+<!-- fim do Conteudo Principal -->
 
-              <hr class="mt-2"> 
-
-
-          <div mt-2></div>
-      </aside>
-
-      <main>
-        <div class="container-fluid">
-            <div class="row">
-               <?php
-               while($qntd < 18){
-                 echo $card;
-                 $qntd++;
-               }
-               ?>
-
-              </div>
-            </div>
-          </div>
-
-      </main>
-
-
-
-    </section>
-
-      <!-- Fim conteudo Principal-->
+      
 
       <!--INICIO FOOTER-->
     <footer id="sticky-footer" class="flex-shrink-0 py-2 bg-dark text-white-50">
@@ -105,6 +77,7 @@ $qntd = 0;
       </footer>
     <!--FIM FOOTER-->
 
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
 </body>
