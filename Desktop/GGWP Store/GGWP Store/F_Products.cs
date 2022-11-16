@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,21 @@ namespace GGWP_Store
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string src = txtSrc.Text;
+            Product p = new Product(Int32.Parse(txtSrc.Text));
+            MySqlDataReader r = p.srcProduct(Int32.Parse(txtSrc.Text));
+            if (r.Read())
+            {
+                textBox1.Text = r["id"].ToString();
+                textBox2.Text = r["nome"].ToString();
+                textBox3.Text = r["desc"].ToString();
+                textBox4.Text = r["preco"].ToString();
+                textBox5.Text = r["qtd"].ToString();
+                textBox6.Text = r["categoria"].ToString();
+                textBox7.Text = r["user"].ToString();
+            }
+            Conexao.con.Close();
+
+            /*string src = txtSrc.Text;
             StreamReader texto;
 
             listBox1.Items.Clear();
@@ -38,7 +53,13 @@ namespace GGWP_Store
                 listBox1.Items.Add("R$ " + texto.ReadLine());
                 listBox1.Items.Add("Quant: " + texto.ReadLine());
                 listBox1.Items.Add(texto.ReadLine());
-            }
+            }*/
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            F_NewProduct p = new F_NewProduct();
+            p.Show();
         }
     }
 }

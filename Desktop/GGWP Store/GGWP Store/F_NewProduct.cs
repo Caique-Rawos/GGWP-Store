@@ -19,11 +19,24 @@ namespace GGWP_Store
         public F_NewProduct()
         {
             InitializeComponent();
+            
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            txtSucess.Text = "";
+            if(txtName.Text == "" || txtQtd.Text == "" || txtValue.Text == "")
+            {
+                MessageBox.Show ("Aviso");
+            }
+            else
+            {
+
+                Conexao.newProduct (txtName.Text, txtDesc.Text, Convert.ToInt32(txtValue.Text), Convert.ToInt32(txtQtd.Text), txtCat.Text, "Usuário");
+            }
+
+
+            /*txtSucess.Text = "";
             StreamWriter arquivo;
             if(txtName.Text != ""){
                 String name = txtName.Text;
@@ -65,7 +78,7 @@ namespace GGWP_Store
                     }else
                     erroValor.Text = "Digite um valor possitivo!";
             }else
-                erroNome.Text = "Digite o nome do produto";
+                erroNome.Text = "Digite o nome do produto";*/
         }
 
         private void button3_Click(object sender, EventArgs e)

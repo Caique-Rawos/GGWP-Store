@@ -28,7 +28,6 @@ namespace GGWP_Store
             if (Application.OpenForms.OfType<F_Resumo>().Count() == 0)
             {
                 F_Resumo vendaLink = new F_Resumo();
-                vendaLink.MdiParent = F_Inicio.ActiveForm;
                 vendaLink.Show();
             }
         }

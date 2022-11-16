@@ -47,6 +47,8 @@ namespace GGWP_Store
             this.erroValor = new System.Windows.Forms.Label();
             this.erroQtd = new System.Windows.Forms.Label();
             this.txtSucess = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCat = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtQtd
@@ -79,10 +81,10 @@ namespace GGWP_Store
             this.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtDesc.ForeColor = System.Drawing.Color.White;
-            this.txtDesc.Location = new System.Drawing.Point(195, 378);
+            this.txtDesc.Location = new System.Drawing.Point(195, 497);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(646, 175);
+            this.txtDesc.Size = new System.Drawing.Size(646, 54);
             this.txtDesc.TabIndex = 6;
             // 
             // txtName
@@ -113,7 +115,7 @@ namespace GGWP_Store
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(189, 344);
+            this.label10.Location = new System.Drawing.Point(189, 446);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(136, 31);
             this.label10.TabIndex = 1;
@@ -243,12 +245,37 @@ namespace GGWP_Store
             this.txtSucess.Size = new System.Drawing.Size(0, 24);
             this.txtSucess.TabIndex = 13;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(189, 343);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 31);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Categoria";
+            // 
+            // txtCat
+            // 
+            this.txtCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.txtCat.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtCat.ForeColor = System.Drawing.Color.White;
+            this.txtCat.Location = new System.Drawing.Point(195, 393);
+            this.txtCat.Multiline = true;
+            this.txtCat.Name = "txtCat";
+            this.txtCat.Size = new System.Drawing.Size(192, 39);
+            this.txtCat.TabIndex = 15;
+            // 
             // F_NewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1042, 706);
+            this.Controls.Add(this.txtCat);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSucess);
             this.Controls.Add(this.erroQtd);
             this.Controls.Add(this.erroValor);
@@ -294,5 +321,7 @@ namespace GGWP_Store
         private System.Windows.Forms.Label erroValor;
         private System.Windows.Forms.Label erroQtd;
         private System.Windows.Forms.Label txtSucess;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtCat;
     }
 }

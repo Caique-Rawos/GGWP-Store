@@ -1,5 +1,4 @@
-﻿
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +11,7 @@ namespace GGWP_Store
 {
     class Conexao
     {
-        private static MySqlConnection con;
-
-        
+        public static MySqlConnection con;
 
         public static Boolean getConexao(String local, String banco, String user, String senha)
         {
@@ -37,26 +34,47 @@ namespace GGWP_Store
             return retorno;
         }
 
-        public static int login(String usuario, String senha)
+        public static string login(String usuario, String senha)
         {
+            string tipo = "";
 
             try
             {
                 con.Open();
                 MySqlCommand login = new MySqlCommand("Select * from usuario_desktop_ggwp where email ='" + usuario + "' and senha ='" + senha + "'", con);
-                //MySqlDataReader resultado = login.ExecuteReader();
-                int valor = Convert.ToInt32(login.ExecuteScalar());
-                return valor;
+                MySqlDataReader resultado = login.ExecuteReader();
+                if (resultado.Read())
+                {
+                    tipo = resultado["email"].ToString();
+                }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
-                return 0;
             }
             finally
             {
                 con.Close();
             }
+            return tipo;
+        }
+        public static void newProduct( String nome, String descricao, int preco, int quant, String cat, String usuario)
+        {
+                try
+                {
+                    con.Open();
+                    MySqlCommand insere = new MySqlCommand("insert into produto_ggwp ( nome, descricao, preco, quantidade, categoria, user) values ('"+ nome + "','"+ descricao + "'," + preco + "," + quant + ",'" + cat + "','" + usuario + "')", con);
+                    insere.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+                finally
+                {
+                    con.Close();
+                }    
+            
         }
     }
 }
