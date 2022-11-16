@@ -15,11 +15,62 @@ include "cabecalho.php";
     <script src="https://kit.fontawesome.com/6b517c0011.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="imagens/favicon-32x32.ico">
     <script src="javaScript/java.js"></script>
+    <script src="jquery/jquery-3.6.1.min.js"></script>
+
+    <script>
+
+      function cep(){
+        var prod = document.getElementById("valor_prod").innerHTML;
+        console.log(prod);
+        var cep = document.getElementById("cep").value;
+        console.log(cep);
+        $.post( 
+          "ajax/calcula_cep.php", { 
+          cep: cep,
+          preco : prod
+        },
+        function( data ) {
+          var valor = data.valor['0'];
+          var prazo = data.prazo['0'];
+          document.getElementById("valor_frete").innerHTML = valor;
+          document.getElementById("valor_tot").innerHTML = data.total;
+          if(prazo != '1')
+          document.getElementById("comment_frete").innerHTML = "<br> Valor Sedex: R$ "+valor+" <br> Prazo: "+prazo+" dias";
+          else
+          document.getElementById("comment_frete").innerHTML = "<br> Valor Sedex: R$ "+valor+" <br> Prazo: "+prazo+" dia";
+        }, "json");
+        endereco(cep);
+      }
+
+      function endereco(cep){
+        $.post( 
+          "ajax/endereco.php", { 
+          cep: cep
+        },
+        function( data ) {
+          document.getElementById("rua").value = data.rua['0'];
+          document.getElementById("bairro").value = data.bairro['0'];
+          document.getElementById("estado").value = data.uf['0'];
+        }, "json");
+      }
+      
+    </script>
 
     <title>GGWP Store</title>
 </head>
 <body> 
-    <?php echo $cabeca;?>
+  
+    <?php
+    function get_endereco($cep){
+      $cep = preg_replace("/[^0-9]/", "", $cep);
+      $url = "http://viacep.com.br/ws/$cep/xml/";
+    
+      $xml = simplexml_load_file($url);
+      return $xml;
+    }
+    
+    echo $cabeca;
+    ?>
 
       <div class="container bordaItens mt-5 p-3">
         <div class="row">
@@ -52,13 +103,39 @@ include "cabecalho.php";
           <h1 class="display-5">Frete</h1>
           <div class="row form-group">
             <div class="col-md-8 col-8">
-            <input type="text" class="form-control" name="cep" placeholder="Insira o CEP">
+            <input type="text" class="form-control" name="cep" id="cep" placeholder="Insira o CEP">
             </div>
             <div class="col-md-4 col-4 text-center d-grid gap-2">
-              <button class="btn btn-outline-success">Enviar</button>
+              <button class="btn btn-outline-success" onclick="cep()">Enviar</button>
             </div>
-      </div>
-</div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-4">
+              <label for="rua" class="lead">Rua</label><br>
+              <input type="text" class="form-control" name="rua" id="rua" placeholder="">
+            </div>
+            <div class="col-4">
+              <label for="bairro" class="lead">Bairro</label><br>
+              <input type="text" class="form-control" name="bairro" id="bairro" placeholder="">
+            </div>
+          </div>
+          <div class="row mr-4">
+            <div class="col-4 mt-4">
+              <label for="logradouro" class="lead">Logradouro</label><br>
+              <input type="text" class="form-control" name="logradouro" id="logradouro" placeholder="">
+            </div>
+            <div class="col-4 mt-4">
+              <label for="estado" class="lead">Estado</label><br>
+              <input type="text" class="form-control" name="estado" id="estado" placeholder="">
+            </div>
+            <div class="col-2 mt-4">
+              <label for="numero" class="lead">Numero</label><br>
+              <input type="text" class="form-control" name="numero" id="numero" placeholder="">
+            </div>
+          </div>
+          <Span class="center lead mt-4" id="comment_frete"></Span>
+
+        </div>
       <div class="container carrinho bordaItens mt-5 p-3">
         <div class="container">
           <div class="row">
@@ -72,7 +149,7 @@ include "cabecalho.php";
               <p class="lead corLetra mt-3">Valor dos Produtos</p>
             </div>
             <div class="col-4">
-              <p class="lead corLetra mt-3">R$ 399,95</p>
+              <p class="lead corLetra mt-3">R$ <span id="valor_prod">0,00</span> </p>
             </div><hr class="mt-2">
           </div>
           <div class="row">
@@ -80,7 +157,7 @@ include "cabecalho.php";
               <p class="lead corLetra mt-1">Frete</p>
             </div>
             <div class="col-4">
-              <p class="lead corLetra mt-1">R$ 0,00</p>
+              <p class="lead corLetra mt-1">R$ <span id="valor_frete">0,00</span></p>
             </div>
           </div>
           <div class="row">
@@ -88,7 +165,7 @@ include "cabecalho.php";
               <p class="lead corLetra mt-1">Valor Total</p>
             </div>
             <div class="col-4">
-              <p class="lead corLetra mt-1">R$ 399,95</p>
+              <p class="lead corLetra mt-1">R$ <span id="valor_tot">0,00</span></p>
             </div>
           </div>
           <div class="row mt-4"> 
@@ -110,8 +187,7 @@ include "cabecalho.php";
 </footer>
 <!--FIM FOOTER-->
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></scrip>
 
 </body>
 </html>

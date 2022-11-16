@@ -2,6 +2,7 @@
 include "conexao.php";
 
 if($_SESSION['login'] != ""){
+$valor_total = 0;
 $sql = "SELECT count(id_item) AS total, id_item, c.usuario, p.nome, p.preco, p.foto
         FROM carrinho_ggwp c
         LEFT JOIN produto_ggwp p ON p.id_produto = c.id_item
@@ -10,6 +11,7 @@ $sql = "SELECT count(id_item) AS total, id_item, c.usuario, p.nome, p.preco, p.f
                $stmt = $conn->prepare($sql);
                $stmt->execute();
     while ($row = $stmt->fetch()) {
+        $valor_total += $row['preco'] * $row['total'];
         echo '
         <div class="col-lg-2 col-6 col-md-4 mt-3">
             <a class="categorias" href="produto.php?id_prod='.$row['id_item'].'">
@@ -26,6 +28,18 @@ $sql = "SELECT count(id_item) AS total, id_item, c.usuario, p.nome, p.preco, p.f
             </div>
         </div>';
     }
+    echo'<script>
+    window.onload = function(){
+    document.getElementById("valor_prod").innerHTML = "'.number_format($valor_total,2,",",".").'";
+    document.getElementById("valor_tot").innerHTML = "'.number_format($valor_total,2,",",".").'";
+    }
+    </script>';
+}else{
+  echo "
+        <script>
+        window.location.href = \"login.php\";
+        </script>
+        ";
 }
 
 
