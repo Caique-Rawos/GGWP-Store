@@ -58,23 +58,5 @@ namespace GGWP_Store
             }
             return tipo;
         }
-        public static void newProduct( String nome, String descricao, int preco, int quant, String cat, String usuario)
-        {
-                try
-                {
-                    con.Open();
-                    MySqlCommand insere = new MySqlCommand("insert into produto_ggwp ( nome, descricao, preco, quantidade, categoria, user) values ('"+ nome + "','"+ descricao + "'," + preco + "," + quant + ",'" + cat + "','" + usuario + "')", con);
-                    insere.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.ToString());
-                }
-                finally
-                {
-                    con.Close();
-                }    
-            
-        }
     }
 }

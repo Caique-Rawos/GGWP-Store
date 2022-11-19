@@ -135,7 +135,8 @@ include "cabecalho.php";
                          }
                          $cat = $_POST['cat'];
                          $quant = $_POST['quant'];
-                         $sql = "INSERT INTO produto_ggwp (id_produto, nome, descricao, preco, quantidade, categoria, foto, usuario) VALUES (0,'$nome', '$desc', $preco, $quant, '$cat', :img, '{$_SESSION['login']}' );";
+                         $hoje = date('Y-m-d');
+                         $sql = "INSERT INTO produto_ggwp (id_produto, nome, descricao, preco, quantidade, categoria, foto, usuario, data) VALUES (0,'$nome', '$desc', $preco, $quant, '$cat', :img, '{$_SESSION['login']}', '$hoje');";
 
                          //die($sql);
                          try{

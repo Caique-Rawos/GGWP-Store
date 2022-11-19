@@ -25,14 +25,47 @@ namespace GGWP_Store
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if(txtName.Text == "" || txtQtd.Text == "" || txtValue.Text == "")
+            int categ = 0;
+            if(comboBox1.Text == "Colecionáveis")
             {
-                MessageBox.Show ("Aviso");
+                categ = 1;
+            }else if(comboBox1.Text == "Games")
+            {
+                categ = 2;
+            }
+            else if (comboBox1.Text == "Computadores")
+            {
+                categ = 3;
+            }
+            else if (comboBox1.Text == "Periféricos")
+            {
+                categ = 4;
+            }
+            else if (comboBox1.Text == "HQ's")
+            {
+                categ = 5;
+            }
+            string dataAt = DateTime.Now.ToString("yyyy/MM/dd");
+
+            if (txtName.Text == "" || txtQtd.Text == "" || txtValue.Text == "")
+            {
+                MessageBox.Show ("Todos os campos devem ser preeencidos");
+            }else if(categ == 0)
+            {
+                MessageBox.Show("Defina a Categoria corretamente");
             }
             else
             {
 
-                Conexao.newProduct (txtName.Text, txtDesc.Text, Convert.ToInt32(txtValue.Text), Convert.ToInt32(txtQtd.Text), txtCat.Text, "Usuário");
+                if(Product.newProduct(txtName.Text, txtDesc.Text, txtValue.Text, Convert.ToInt32(txtQtd.Text), categ, txtUsuario.Text, dataAt))
+                {
+                    MessageBox.Show("Produto Cadastrado com sucesso!");
+                    button3_Click(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao cadastrar produto");
+                }
             }
 
 
@@ -91,6 +124,28 @@ namespace GGWP_Store
             erroNome.Text = "";
             erroValor.Text = "";
             erroQtd.Text = "";
+            comboBox1.Text = "";
+        }
+
+        private void txtValue_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+        (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtQtd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
     }
 }

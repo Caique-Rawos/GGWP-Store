@@ -49,6 +49,11 @@ namespace GGWP_Store
             this.txtSucess = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCat = new System.Windows.Forms.TextBox();
+            this.txtIdProduto = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtQtd
@@ -57,11 +62,12 @@ namespace GGWP_Store
             this.txtQtd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtQtd.ForeColor = System.Drawing.Color.White;
-            this.txtQtd.Location = new System.Drawing.Point(686, 287);
+            this.txtQtd.Location = new System.Drawing.Point(651, 377);
             this.txtQtd.Multiline = true;
             this.txtQtd.Name = "txtQtd";
-            this.txtQtd.Size = new System.Drawing.Size(155, 39);
+            this.txtQtd.Size = new System.Drawing.Size(173, 39);
             this.txtQtd.TabIndex = 7;
+            this.txtQtd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQtd_KeyPress);
             // 
             // txtValue
             // 
@@ -69,11 +75,12 @@ namespace GGWP_Store
             this.txtValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtValue.ForeColor = System.Drawing.Color.White;
-            this.txtValue.Location = new System.Drawing.Point(468, 287);
+            this.txtValue.Location = new System.Drawing.Point(443, 377);
             this.txtValue.Multiline = true;
             this.txtValue.Name = "txtValue";
-            this.txtValue.Size = new System.Drawing.Size(144, 39);
+            this.txtValue.Size = new System.Drawing.Size(152, 39);
             this.txtValue.TabIndex = 7;
+            this.txtValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValue_KeyPress);
             // 
             // txtDesc
             // 
@@ -81,10 +88,10 @@ namespace GGWP_Store
             this.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtDesc.ForeColor = System.Drawing.Color.White;
-            this.txtDesc.Location = new System.Drawing.Point(195, 497);
+            this.txtDesc.Location = new System.Drawing.Point(195, 454);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(646, 54);
+            this.txtDesc.Size = new System.Drawing.Size(646, 38);
             this.txtDesc.TabIndex = 6;
             // 
             // txtName
@@ -93,10 +100,10 @@ namespace GGWP_Store
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtName.ForeColor = System.Drawing.Color.White;
-            this.txtName.Location = new System.Drawing.Point(468, 168);
+            this.txtName.Location = new System.Drawing.Point(443, 265);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(373, 39);
+            this.txtName.Size = new System.Drawing.Size(398, 39);
             this.txtName.TabIndex = 3;
             // 
             // panel2
@@ -115,7 +122,7 @@ namespace GGWP_Store
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(189, 446);
+            this.label10.Location = new System.Drawing.Point(189, 419);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(136, 31);
             this.label10.TabIndex = 1;
@@ -126,7 +133,7 @@ namespace GGWP_Store
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(680, 242);
+            this.label8.Location = new System.Drawing.Point(645, 343);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(154, 31);
             this.label8.TabIndex = 1;
@@ -137,7 +144,7 @@ namespace GGWP_Store
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(462, 242);
+            this.label6.Location = new System.Drawing.Point(437, 343);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 31);
             this.label6.TabIndex = 1;
@@ -148,7 +155,7 @@ namespace GGWP_Store
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(462, 119);
+            this.label5.Location = new System.Drawing.Point(437, 220);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 31);
             this.label5.TabIndex = 1;
@@ -184,7 +191,7 @@ namespace GGWP_Store
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(195, 576);
+            this.button3.Location = new System.Drawing.Point(195, 599);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(98, 43);
             this.button3.TabIndex = 8;
@@ -200,7 +207,7 @@ namespace GGWP_Store
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button4.ForeColor = System.Drawing.Color.Lime;
-            this.button4.Location = new System.Drawing.Point(743, 576);
+            this.button4.Location = new System.Drawing.Point(743, 599);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(98, 43);
             this.button4.TabIndex = 9;
@@ -212,7 +219,7 @@ namespace GGWP_Store
             // 
             this.erroNome.AutoSize = true;
             this.erroNome.ForeColor = System.Drawing.Color.Red;
-            this.erroNome.Location = new System.Drawing.Point(465, 214);
+            this.erroNome.Location = new System.Drawing.Point(465, 320);
             this.erroNome.Name = "erroNome";
             this.erroNome.Size = new System.Drawing.Size(0, 13);
             this.erroNome.TabIndex = 10;
@@ -221,7 +228,7 @@ namespace GGWP_Store
             // 
             this.erroValor.AutoSize = true;
             this.erroValor.ForeColor = System.Drawing.Color.Red;
-            this.erroValor.Location = new System.Drawing.Point(465, 332);
+            this.erroValor.Location = new System.Drawing.Point(465, 438);
             this.erroValor.Name = "erroValor";
             this.erroValor.Size = new System.Drawing.Size(0, 13);
             this.erroValor.TabIndex = 11;
@@ -230,7 +237,7 @@ namespace GGWP_Store
             // 
             this.erroQtd.AutoSize = true;
             this.erroQtd.ForeColor = System.Drawing.Color.Red;
-            this.erroQtd.Location = new System.Drawing.Point(683, 332);
+            this.erroQtd.Location = new System.Drawing.Point(683, 438);
             this.erroQtd.Name = "erroQtd";
             this.erroQtd.Size = new System.Drawing.Size(0, 13);
             this.erroQtd.TabIndex = 12;
@@ -262,11 +269,77 @@ namespace GGWP_Store
             this.txtCat.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtCat.ForeColor = System.Drawing.Color.White;
-            this.txtCat.Location = new System.Drawing.Point(195, 393);
+            this.txtCat.Location = new System.Drawing.Point(649, 96);
             this.txtCat.Multiline = true;
             this.txtCat.Name = "txtCat";
             this.txtCat.Size = new System.Drawing.Size(192, 39);
             this.txtCat.TabIndex = 15;
+            this.txtCat.Visible = false;
+            // 
+            // txtIdProduto
+            // 
+            this.txtIdProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.txtIdProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdProduto.Enabled = false;
+            this.txtIdProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtIdProduto.ForeColor = System.Drawing.Color.White;
+            this.txtIdProduto.Location = new System.Drawing.Point(443, 140);
+            this.txtIdProduto.Multiline = true;
+            this.txtIdProduto.Name = "txtIdProduto";
+            this.txtIdProduto.Size = new System.Drawing.Size(398, 39);
+            this.txtIdProduto.TabIndex = 17;
+            this.txtIdProduto.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(437, 96);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(176, 31);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Id do Produto";
+            this.label3.Visible = false;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtUsuario.ForeColor = System.Drawing.Color.White;
+            this.txtUsuario.Location = new System.Drawing.Point(195, 529);
+            this.txtUsuario.Multiline = true;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(646, 39);
+            this.txtUsuario.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(189, 495);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(108, 31);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Usuário";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Colecionáveis",
+            "Games",
+            "Computadores",
+            "Periféricos",
+            "HQ\'s"});
+            this.comboBox1.Location = new System.Drawing.Point(195, 382);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(192, 21);
+            this.comboBox1.TabIndex = 20;
             // 
             // F_NewProduct
             // 
@@ -274,6 +347,11 @@ namespace GGWP_Store
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1042, 706);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.txtIdProduto);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSucess);
@@ -323,5 +401,10 @@ namespace GGWP_Store
         private System.Windows.Forms.Label txtSucess;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCat;
+        private System.Windows.Forms.TextBox txtIdProduto;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

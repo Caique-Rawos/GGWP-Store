@@ -50,7 +50,7 @@ namespace GGWP_Store
             try
             {
                 Conexao.con.Open();
-                MySqlCommand consulta = new MySqlCommand("SELECT * FROM produto_ggwp WHERE id_produto'" + id + "'", Conexao.con);
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM produto_ggwp WHERE id_produto = " + id + ";", Conexao.con);
                 resultado = consulta.ExecuteReader();
             }
             catch (Exception ex)
@@ -59,9 +59,31 @@ namespace GGWP_Store
             }
             finally
             {
-                Conexao.con.Close();
+                //Conexao.con.Close();
             }
             return resultado;
+        }
+
+        public static bool newProduct(string nome, string descricao, string preco, int quant, int cat, string usuario, string data)
+        {
+            bool resp = false;
+            try
+            {
+                Conexao.con.Open();
+                MySqlCommand insere = new MySqlCommand("insert into produto_ggwp (nome, descricao, preco, quantidade, categoria, usuario, data) values ('" + nome + "','" + descricao + "'," + preco + "," + quant + "," + cat + ",'" + usuario + "', '"+ data +"');", Conexao.con);
+                insere.ExecuteNonQuery();
+                resp = true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                Console.WriteLine("insert into produto_ggwp (nome, descricao, preco, quantidade, categoria, usuario, data) values ('" + nome + "','" + descricao + "'," + preco + "," + quant + "," + cat + ",'" + usuario + "', '" + data + "');");
+            }
+            finally
+            {
+                Conexao.con.Close();
+            }
+            return resp;
         }
     }
 }

@@ -27,19 +27,31 @@ namespace GGWP_Store
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Product p = new Product(Int32.Parse(txtSrc.Text));
-            MySqlDataReader r = p.srcProduct(Int32.Parse(txtSrc.Text));
-            if (r.Read())
+            if (txtSrc.Text != "")
             {
-                textBox1.Text = r["id"].ToString();
-                textBox2.Text = r["nome"].ToString();
-                textBox3.Text = r["desc"].ToString();
-                textBox4.Text = r["preco"].ToString();
-                textBox5.Text = r["qtd"].ToString();
-                textBox6.Text = r["categoria"].ToString();
-                textBox7.Text = r["user"].ToString();
+                try
+                {
+                    Product p = new Product(Int32.Parse(txtSrc.Text));
+                    MySqlDataReader r = p.srcProduct(Int32.Parse(txtSrc.Text));
+                    if (r != null)
+                        if (r.Read())
+                        {
+                            txtId.Text = r["id_produto"].ToString();
+                            txtNome.Text = r["nome"].ToString();
+                            txtDesc.Text = r["descricao"].ToString();
+                            txtPreco.Text = r["preco"].ToString();
+                            txtQuant.Text = r["quantidade"].ToString();
+                            txtCat.Text = r["categoria"].ToString();
+                            txtUser.Text = r["usuario"].ToString();
+                            txtData.Text = r["data"].ToString();
+                        }
+                    Conexao.con.Close();
+                }catch(Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                    MessageBox.Show("O campo de pesquisa precisa ser um numero!");
+                }
             }
-            Conexao.con.Close();
 
             /*string src = txtSrc.Text;
             StreamReader texto;
