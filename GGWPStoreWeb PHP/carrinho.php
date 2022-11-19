@@ -21,9 +21,7 @@ include "cabecalho.php";
 
       function cep(){
         var prod = document.getElementById("valor_prod").innerHTML;
-        console.log(prod);
         var cep = document.getElementById("cep").value;
-        console.log(cep);
         $.post( 
           "ajax/calcula_cep.php", { 
           cep: cep,
@@ -42,6 +40,71 @@ include "cabecalho.php";
         endereco(cep);
       }
 
+      function finaliza(){
+        var tot = document.getElementById("valor_tot").innerHTML;
+        var prod = document.getElementById("valor_prod").innerHTML;
+        var frete = document.getElementById("valor_frete").innerHTML;
+        $.post( 
+          "ajax/finaliza.php", { 
+          total: tot,
+          prod: prod,
+          frete: frete,
+        },
+        function( data ) {
+          if(data.error == "0"){
+            //geraBoleto(data.id);
+            location.reload(true);
+          }else{
+            alert("Erro ao finalizar venda!");
+          }
+        }, "json");
+      }
+
+      function geraBoleto(id){
+        var tot = document.getElementById("valor_tot").innerHTML;
+        var prod = document.getElementById("valor_prod").innerHTML;
+        var frete = document.getElementById("valor_frete").innerHTML;
+        $.post( 
+          "Boleto/samples/banco_do_brasil.php", { 
+          total: tot,
+          prod: prod,
+          frete: frete,
+        },
+        function( data ) {
+          if(data.error == "0"){
+            geraBoleto(data.id);
+          }else{
+            alert("Erro ao gerar boleto!");
+          }
+        }, "json");
+      }
+
+      function verifica(){
+        var prod = document.getElementById("valor_prod").innerHTML;
+        if(prod == "" || prod == "0,00"){
+            alert("O carrinho esta vazio!");
+            return false;
+        }else if (document.getElementById("cep").value.length != 8){
+            console.log(document.getElementById("cep").value.length);
+            alert("Defina o Cep corretamente!");
+            return false;
+        }else if(document.getElementById("rua").value == ""){
+            alert("Defina a Rua!");
+            return false;
+        }else if(document.getElementById("bairro").value == ""){
+            alert("Defina o Bairro!");
+            return false;
+        }else if(document.getElementById("estado").value == ""){
+            alert("Defina o Estado!");
+            return false;
+        }else if(document.getElementById("numero").value == ""){
+            alert("Defina o Numero!");
+            return false;
+        }else{
+          return true;
+        }
+      }
+
       function endereco(cep){
         $.post( 
           "ajax/endereco.php", { 
@@ -53,7 +116,15 @@ include "cabecalho.php";
           document.getElementById("estado").value = data.uf['0'];
         }, "json");
       }
-      
+
+      function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+      }
     </script>
 
     <title>GGWP Store</title>
@@ -103,7 +174,7 @@ include "cabecalho.php";
           <h1 class="display-5">Frete</h1>
           <div class="row form-group">
             <div class="col-md-8 col-8">
-            <input type="text" class="form-control" name="cep" id="cep" placeholder="Insira o CEP">
+            <input type="text" class="form-control" name="cep" id="cep" maxlength="8"  value="" placeholder="Insira o CEP" onkeypress="return isNumber(event);" />
             </div>
             <div class="col-md-4 col-4 text-center d-grid gap-2">
               <button class="btn btn-outline-success" onclick="cep()">Enviar</button>
@@ -130,7 +201,7 @@ include "cabecalho.php";
             </div>
             <div class="col-2 mt-4">
               <label for="numero" class="lead">Numero</label><br>
-              <input type="text" class="form-control" name="numero" id="numero" placeholder="">
+              <input type="text" class="form-control" name="numero" id="numero" placeholder="" onkeypress="return isNumber(event);" />
             </div>
           </div>
           <Span class="center lead mt-4" id="comment_frete"></Span>
@@ -170,10 +241,10 @@ include "cabecalho.php";
           </div>
           <div class="row mt-4"> 
             <div class="col-6 d-grid gap-2">
-              <button class="btn btn-outline-success">Continuar comprando</button>
+              <button class="btn btn-outline-success" onclick="window.location.href = 'index.php'">Continuar comprando</button>
             </div>
             <div class="col-6 d-grid gap-2">
-              <button  class="btn btn-outline-success">Finalizar compra</button>
+              <button  class="btn btn-outline-success" onclick="if(verifica()){finaliza()}">Finalizar compra</button>
             </div>
         </div>  
         </div>

@@ -17,6 +17,30 @@ include "cabecalho.php";
     <script src="https://kit.fontawesome.com/6b517c0011.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="imagens/favicon-32x32.ico">
     <script src="javaScript/java.js"></script>
+    <script src="jquery/jquery-3.6.1.min.js"></script>
+
+    <script>
+      function somenteNumeros(e) {
+        var charCode = e.charCode ? e.charCode : e.keyCode;
+        var text = $("#preco").val();
+        if(text.includes(".") && (charCode == 46 || charCode == 44)){
+           return false;
+        }else if(charCode == 46 || charCode == 44){
+          $("#preco").val($("#preco").val() + ".");
+          return false;
+        }
+
+        // charCode 8 = backspace   
+        // charCode 9 = tab
+        if (charCode != 8 && charCode != 9) {
+            // charCode 48 equivale a 0   
+            // charCode 57 equivale a 9
+            if (charCode < 48 || charCode > 57) {
+                return false;
+            }
+        }
+    }
+    </script>
 
     <title>GGWP Store</title>
 </head>
@@ -25,7 +49,7 @@ include "cabecalho.php";
 
 <?php echo $cabeca;?>
 
-<h2>Cadastro de Alunos</h2>
+<h2>Cadastro de Produtos</h2>
 <div>
 
     <!-- form com enctype para indicar que serão enviados dados em binário além de texto -->
@@ -36,7 +60,7 @@ include "cabecalho.php";
         <h2>Descrição</h2>
         <input type="text" name="desc" id="desc"><br><br>
         <h2>Preço</h2>
-        <input type="number" name="preco" id="preco"><br><br>
+        <input type="text" name="preco" id="preco" onkeypress="return somenteNumeros(event);"/><br><br>
         <h2>Categoria</h2>
         <select name="cat">
         <option value="1">Colecionáveis</option>
@@ -46,7 +70,7 @@ include "cabecalho.php";
         <option value="5">HQ's</option>
       </select>
         <h2>Quantidade</h2>
-        <input type="number" name="quant" id="quant"><br><br>
+        <input type="number" name="quant" id="quant" onkeypress="return somenteNumeros(event);"><br><br>
 
         Foto:<br>
         <input type="file" name="foto" accept="image/gif, image/png, imagem/jpg"><br><br>
@@ -76,6 +100,13 @@ include "cabecalho.php";
     // Constante para o tam máximo de arquivo de foto - 2 MB
     define('TAMANHO_MAXIMO', (5 * 1024 * 1024));
 
+    function endsWith($haystack, $needle, $case = true) {
+      if ($case) {
+          return (strcmp(substr($haystack, strlen($haystack) - strlen($needle)), $needle) === 0);
+      }
+      return (strcasecmp(substr($haystack, strlen($haystack) - strlen($needle)), $needle) === 0);
+  }
+
     if ($_SERVER["REQUEST_METHOD"] === 'POST') {
         //die(var_dump(print_r($_FILES)) . var_dump(print_r($_POST)));
            if(isset($_FILES['foto'])){
@@ -99,6 +130,9 @@ include "cabecalho.php";
                          $nome = $_POST['nome'];
                          $desc = $_POST['desc'];
                          $preco = $_POST['preco'];
+                         if(endsWith($preco, ".")){
+                          die("<script> alert('Defina o preço corretamente!') </script>");
+                         }
                          $cat = $_POST['cat'];
                          $quant = $_POST['quant'];
                          $sql = "INSERT INTO produto_ggwp (id_produto, nome, descricao, preco, quantidade, categoria, foto, usuario) VALUES (0,'$nome', '$desc', $preco, $quant, '$cat', :img, '{$_SESSION['login']}' );";
