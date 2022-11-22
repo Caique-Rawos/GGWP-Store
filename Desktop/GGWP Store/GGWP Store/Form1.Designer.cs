@@ -178,6 +178,7 @@ namespace GGWP_Store
             this.passTextBox.PasswordChar = '*';
             this.passTextBox.Size = new System.Drawing.Size(310, 32);
             this.passTextBox.TabIndex = 1;
+            this.passTextBox.Text = "teste123";
             this.passTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.passTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.passTextBox_KeyPress);
             // 
@@ -194,6 +195,7 @@ namespace GGWP_Store
             this.userTextBox.Name = "userTextBox";
             this.userTextBox.Size = new System.Drawing.Size(310, 32);
             this.userTextBox.TabIndex = 0;
+            this.userTextBox.Text = "caique.rawos@gmail.com";
             this.userTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel3

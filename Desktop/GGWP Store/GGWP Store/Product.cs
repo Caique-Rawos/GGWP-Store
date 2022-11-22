@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +29,7 @@ namespace GGWP_Store
         public string User { get => user; set => user = value; }
         public int Qtd { get => qtd; set => qtd = value; }
 
-        public Product(int id, int qtd, double preco, string nome, string categoria, string desc, string endereco, string user)
+        public Product(int id, int qtd, double preco, string nome, string categoria, string desc)
         {
             this.id = id;
             this.qtd = qtd;
@@ -36,21 +37,25 @@ namespace GGWP_Store
             this.nome = nome;
             this.categoria = categoria;
             this.desc = desc;
-            this.endereco = endereco;
-            this.user = user;
+            /*this.endereco = endereco;
+            this.user = user;*/
         }
         public Product(int id)
         {
             this.id = id;
         }
-
-        public MySqlDataReader srcProduct(int id)
+        public Product(string nome)
+        {
+            this.nome = nome;
+        }
+        public MySqlDataReader srcProductById(int id)
         {
             MySqlDataReader resultado = null;
             try
             {
+                Conexao.con.Close();
                 Conexao.con.Open();
-                MySqlCommand consulta = new MySqlCommand("SELECT * FROM produto_ggwp WHERE id_produto = " + id + ";", Conexao.con);
+                MySqlCommand consulta = new MySqlCommand("SELECT id_produto, nome, descricao, preco, quantidade, CASE WHEN categoria = 1 THEN 'Colecionáveis' WHEN categoria = 2 THEN 'Games' WHEN categoria = 3 THEN 'Computadores' WHEN categoria = 4 THEN 'Periféricos' WHEN categoria = 5 THEN \"HQ's\" ELSE 'Sem Categoria' END as categoria, foto, foto_endereco, usuario, data FROM produto_ggwp WHERE id_produto = " + id + ";", Conexao.con);
                 resultado = consulta.ExecuteReader();
             }
             catch (Exception ex)
@@ -64,26 +69,119 @@ namespace GGWP_Store
             return resultado;
         }
 
-        public static bool newProduct(string nome, string descricao, string preco, int quant, int cat, string usuario, string data)
+        public DataTable srcProductByName(String name)
         {
-            bool resp = false;
+            DataTable tabela = new DataTable();
             try
             {
+                Conexao.con.Close();
                 Conexao.con.Open();
-                MySqlCommand insere = new MySqlCommand("insert into produto_ggwp (nome, descricao, preco, quantidade, categoria, usuario, data) values ('" + nome + "','" + descricao + "'," + preco + "," + quant + "," + cat + ",'" + usuario + "', '"+ data +"');", Conexao.con);
-                insere.ExecuteNonQuery();
-                resp = true;
+                MySqlCommand consulta = new MySqlCommand("SELECT id_produto, nome, descricao, preco, quantidade, CASE WHEN categoria = 1 THEN 'Colecionáveis' WHEN categoria = 2 THEN 'Games' WHEN categoria = 3 THEN 'Computadores' WHEN categoria = 4 THEN 'Periféricos' WHEN categoria = 5 THEN \"HQ's\" ELSE 'Sem Categoria' END as categoria FROM produto_ggwp WHERE nome like '%" + name + "%';", Conexao.con);
+                MySqlDataAdapter adaptador = new MySqlDataAdapter();
+                adaptador.SelectCommand = consulta;
+                adaptador.Fill(tabela);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
-                Console.WriteLine("insert into produto_ggwp (nome, descricao, preco, quantidade, categoria, usuario, data) values ('" + nome + "','" + descricao + "'," + preco + "," + quant + "," + cat + ",'" + usuario + "', '" + data + "');");
+                Console.WriteLine("SELECT id_produto, nome, descricao, preco, quantidade, CASE WHEN categoria = 1 THEN 'Colecionáveis' WHEN categoria = 2 THEN 'Games' WHEN categoria = 3 THEN 'Computadores' WHEN categoria = 4 THEN 'Periféricos' WHEN categoria = 5 THEN \"HQ's\" ELSE 'Sem Categoria' END as categoria FROM produto_ggwp WHERE nome like '%" + name + "%';");
+            }
+            finally
+            {
+                //Conexao.con.Close();
+            }
+            return tabela;
+        }
+
+        public void newProduct()
+        {
+
+            try
+            {
+                int cat = 0;
+
+                if (categoria == "Colecionáveis")
+                {
+                    cat = 1;
+                }
+                else if (categoria == "Games")
+                {
+                    cat = 2;
+                }
+                else if (categoria == "Computadores")
+                {
+                    cat = 3;
+                }
+                else if (categoria == "Periféricos")
+                {
+                    cat = 4;
+                }
+                else if (categoria == "HQ's")
+                {
+                    cat = 5;
+                }
+
+                string dataAt = DateTime.Now.ToString("yyyy/MM/dd");
+
+                Conexao.con.Open();
+                MySqlCommand insere = new MySqlCommand("insert into produto_ggwp (nome, descricao, preco, quantidade, categoria, data) values ('" + nome + "','" + desc + "'," + preco.ToString().Replace(',', '.') + "," + qtd + "," + cat + ", '"+ dataAt + "')", Conexao.con);
+                insere.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
             }
             finally
             {
                 Conexao.con.Close();
             }
-            return resp;
+
+        }
+        
+        public void att(int id)
+        {
+            this.id = id;
+            try
+            {
+
+                int cat = 0;
+
+                if (categoria == "Colecionáveis")
+                {
+                    cat = 1;
+                }
+                else if (categoria == "Games")
+                {
+                    cat = 2;
+                }
+                else if (categoria == "Computadores")
+                {
+                    cat = 3;
+                }
+                else if (categoria == "Periféricos")
+                {
+                    cat = 4;
+                }
+                else if (categoria == "HQ's")
+                {
+                    cat = 5;
+                }
+
+                string dataAt = DateTime.Now.ToString("yyyy/MM/dd");
+
+                Conexao.con.Open();
+                //MySqlCommand insere = new MySqlCommand("update produto_ggwp set WHERE id_produto = " + id + " (nome, descricao, preco, quantidade, categoria) values ('" + nome + "','" + desc + "'," + preco + "," + qtd + ",'" + categoria + "')", Conexao.con);
+                MySqlCommand insere = new MySqlCommand("update produto_ggwp set nome = '" + nome + "', descricao = '" + desc + "', preco = " + preco.ToString().Replace(',', '.') + ", quantidade = " +qtd+ ", categoria = "+cat+", data = '"+ dataAt + "' where id_produto =" + id + ";", Conexao.con);
+                insere.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                Conexao.con.Close();
+            }
         }
     }
 }

@@ -49,38 +49,53 @@ include "cabecalho.php";
 
 <?php echo $cabeca;?>
 
-<h2>Cadastro de Produtos</h2>
-<div>
+<div style="height: 100px"></div>
+    <!-- form com enctype para indicar que serÃ£o enviados dados em binÃ¡rio alÃ©m de texto -->
+    <div class="container bordaItens corLetra mt-5 p-4">
+      <form method="POST" enctype="multipart/form-data">
+      <h1 class="corLetra display-5 text-center">Cadastro de Produtos</h1>
+        <br>
+          <div class="row form-group">
+            <div class="col-md-4 col-8">
+              <h2>Titulo</h2>
+              <input type="text" class="form-control" name="nome" id="nome" maxlength="30"  value="" placeholder="Insira o Titulo"/>
+            </div>
+            <div class="col-md-7 col-8">
+              <h2>Descrição</h2>
+              <input type="text" class="form-control" name="desc" id="desc" maxlength="100"  value="" placeholder="Insira uma Descricao para o produto"/>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-2 mt-2">
+              <label class="lead">Preço</label><br>
+              <input type="text" class="form-control" name="preco" id="preco" placeholder="" onkeypress="return somenteNumeros(event);">
+            </div>
+            <div class="col-2 mt-2">
+              <label class="lead">Quantidade</label><br>
+              <input type="text" class="form-control" name="quant" id="quant" placeholder="" onkeypress="return somenteNumeros(event);">
+            </div>
+            <div class="col-4 mt-2">
+                <label class="lead">Categoria</label><br>
+                <select name="cat" class="form-control">
+                  <option value="1">Colecionáveis</option>
+                  <option value="2">Games</option>
+                  <option value="3">Computadores</option>
+                  <option value="4">Periféricos</option>
+                  <option value="5">HQ's</option>
+                </select>
+              </div>  
+          </div>
+            <div class="col-4 mt-3">
+              <label class="lead">Foto</label><br>
+              <input type="file" class="form-control" name="foto" id="foto">
+            </div>
+            <div class="col-2 mt-4">
+              <input type="submit" value="Cadastrar" class="form-control btn btn-outline-success"/>
+            </div>
+      </form>
+  </div>
 
-    <!-- form com enctype para indicar que serão enviados dados em binário além de texto -->
-    <form method="POST" enctype="multipart/form-data">
-
-    <h2>Titulo</h2>
-        <input type="text" name="nome" id="nome"><br><br>
-        <h2>Descrição</h2>
-        <input type="text" name="desc" id="desc"><br><br>
-        <h2>Preço</h2>
-        <input type="text" name="preco" id="preco" onkeypress="return somenteNumeros(event);"/><br><br>
-        <h2>Categoria</h2>
-        <select name="cat">
-        <option value="1">Colecionáveis</option>
-        <option value="2">Games</option>
-        <option value="3">Computadores</option>
-        <option value="4">Periféricos</option>
-        <option value="5">HQ's</option>
-      </select>
-        <h2>Quantidade</h2>
-        <input type="number" name="quant" id="quant" onkeypress="return somenteNumeros(event);"><br><br>
-
-        Foto:<br>
-        <input type="file" name="foto" accept="image/gif, image/png, imagem/jpg"><br><br>
-
-        <input type="submit" value="Cadastrar">
-
-        <hr>
-
-    </form>
-</div>
+  <div style="height: 190px"></div>
 
 <!--INICIO FOOTER-->
 <footer id="sticky-footer" class="flex-shrink-0 py-2 bg-dark text-white-50 mt-5">
@@ -113,13 +128,13 @@ include "cabecalho.php";
                $arquivo = $_FILES['foto'];
                //die(var_dump(print_r($arquivo)) . "teste" . var_dump(print_r($_FILES['foto'])));
                if($arquivo['error']){
-                 die("Falha ao enviar aquivo!");
+                 die("<script> alert('Falha ao enviar aquivo!') </script>");
                }
                if($arquivo['size'] > 5242880){
                    die("<script> alert('Tamanha maximo da imagem de 5MB!') </script>");
                }else{
                    if( ($arquivo['name'] != "") && (!preg_match('/^image\/(jpeg|png|jpg)$/', $arquivo['type'])) ){
-                       die("Formato invalido, apenas arquivos JPG, PNG e JPEG são aceitos!");
+                       die("<script> alert('Formato invalido, apenas arquivos JPG, PNG e JPEG são aceitos!') </script>");
                    }else{
                         if ($arquivo['name'] == "") {
                             $fotoBinario = null;
@@ -144,9 +159,9 @@ include "cabecalho.php";
                           $stmt->bindParam(':img', $fotoBinario);
                           $stmt->execute();
                            //$conn -> query($sql);
-                           echo("<span> Cadastrado com sucesso </span>");
+                           echo("<script> alert('Cadastrado com sucesso') </script>");
                          }catch(exception $e){
-                           die("Erro ao executar comando SQL!");
+                           die("<script> alert('Erro ao executar comando SQL!') </script>");
                          }
                    }
                }

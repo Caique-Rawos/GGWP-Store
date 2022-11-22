@@ -17,19 +17,11 @@ namespace GGWP_Store
             InitializeComponent();
         }
 
-        private void panel2_MouseClick(object sender, MouseEventArgs e)
+        private void btnSrc_Click(object sender, EventArgs e)
         {
-            /*if (Application.OpenForms["F_Resumo"] == null)
-            {
-                F_Resumo f_resumo = new F_Resumo();
-                f_resumo.Show();
-            }*/
-
-            if (Application.OpenForms.OfType<F_Resumo>().Count() == 0)
-            {
-                F_Resumo vendaLink = new F_Resumo();
-                vendaLink.Show();
-            }
+                Vendas v = new Vendas();
+            dgv.DataSource = v.srcVendas();
+            v.srcVendas();
         }
     }
 }

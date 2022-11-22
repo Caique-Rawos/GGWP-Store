@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,130 +14,85 @@ namespace GGWP_Store
 {
     public partial class F_NewProduct : Form
     {
-
+        int id = 0;
+        int op = 0;
         string caminho = Directory.GetCurrentDirectory();
-
         public F_NewProduct()
         {
             InitializeComponent();
-            
-
+            this.Text = "Cadastrar produto";
+            lblFunc.Text = "Cadastrar produto";
+            op = 0;
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        public F_NewProduct(int id)
         {
-            int categ = 0;
-            if(comboBox1.Text == "Colecionáveis")
+            InitializeComponent();
+            this.Text = "Atualizar produto";
+            this.id = id;
+            lblFunc.Text = "Atualizar produto";
+            Product p = new Product(id);
+            MySqlDataReader r = p.srcProductById(id);
+            if (r.Read())
             {
-                categ = 1;
-            }else if(comboBox1.Text == "Games")
-            {
-                categ = 2;
+                //textBox1.Text = r["id"].ToString();
+                txtName.Text = r["nome"].ToString();
+                txtDesc.Text = r["descricao"].ToString();
+                txtValue.Text = r["preco"].ToString();
+                txtQtd.Text = r["quantidade"].ToString();
+                comboBox1.Text = r["categoria"].ToString();
+                //txtUser.Text = r["user"].ToString();
             }
-            else if (comboBox1.Text == "Computadores")
-            {
-                categ = 3;
-            }
-            else if (comboBox1.Text == "Periféricos")
-            {
-                categ = 4;
-            }
-            else if (comboBox1.Text == "HQ's")
-            {
-                categ = 5;
-            }
-            string dataAt = DateTime.Now.ToString("yyyy/MM/dd");
-
-            if (txtName.Text == "" || txtQtd.Text == "" || txtValue.Text == "")
-            {
-                MessageBox.Show ("Todos os campos devem ser preeencidos");
-            }else if(categ == 0)
-            {
-                MessageBox.Show("Defina a Categoria corretamente");
-            }
-            else
-            {
-
-                if(Product.newProduct(txtName.Text, txtDesc.Text, txtValue.Text, Convert.ToInt32(txtQtd.Text), categ, txtUsuario.Text, dataAt))
-                {
-                    MessageBox.Show("Produto Cadastrado com sucesso!");
-                    button3_Click(sender, e);
-                }
-                else
-                {
-                    MessageBox.Show("Erro ao cadastrar produto");
-                }
-            }
-
-
-            /*txtSucess.Text = "";
-            StreamWriter arquivo;
-            if(txtName.Text != ""){
-                String name = txtName.Text;
-                erroNome.Text = "";
-                double valor = 0;
-                try{
-                    valor = double.Parse(txtValue.Text);
-                }catch (Exception){
-                    erroValor.Text = "Digite um valor possitivo!";
-                }
-                    if(valor > 0){
-                        double Value = double.Parse(txtValue.Text);
-                        erroValor.Text = "";
-                        int quant = 0;
-                        try{
-                            quant = int.Parse(txtQtd.Text);
-                        }catch (Exception){
-                            erroQtd.Text = "Digite um valor maior que zero!";
-                        }
-                        if(quant > 0){
-                            erroQtd.Text = "";
-                            String nome_arq = txtName.Text;
-                            if (System.IO.File.Exists(caminho + "\\" + nome_arq + ".txt"))
-                            File.Delete(caminho + "\\" + nome_arq + ".txt");
-                            arquivo = new StreamWriter(caminho + "\\" + nome_arq + ".txt");
-                            arquivo.WriteLine(txtName.Text);
-                            arquivo.WriteLine(valor);
-                            arquivo.WriteLine(quant);
-                            arquivo.WriteLine(txtDesc.Text);
-                            arquivo.Close();
-
-                            txtName.Text = "";
-                            txtValue.Text = "";
-                            txtQtd.Text = "";
-                            txtDesc.Text = "";
-                            txtSucess.Text = "Produto cadastrado com sucesso.";
-                        }else
-                        erroQtd.Text = "Digite um valor maior que zero!";
-                    }else
-                    erroValor.Text = "Digite um valor possitivo!";
-            }else
-                erroNome.Text = "Digite o nome do produto";*/
+            Conexao.con.Close();
+            op = 1;
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void clearAll()
         {
             txtName.Text = "";
             txtValue.Text = "";
             txtQtd.Text = "";
             txtDesc.Text = "";
             txtSucess.Text = "";
+            comboBox1.Text = "";
             erroNome.Text = "";
             erroValor.Text = "";
             erroQtd.Text = "";
-            comboBox1.Text = "";
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            clearAll();
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {            
+            if (txtName.Text == "" || txtQtd.Text == "" || txtValue.Text == "")
+            {
+                MessageBox.Show("PREENCHA OS CAMPOS NECESSÁRIOS");
+            }
+            else
+            {
+                Product p = new Product(id, Convert.ToInt32(txtQtd.Text), Convert.ToDouble(txtValue.Text), txtName.Text, comboBox1.Text, txtDesc.Text);
+                if (op == 0){
+                    p.newProduct();
+                    txtSucess.Text = "Produto cadastrado";
+                }
+                else
+                {
+                    p.att(id);
+                    txtSucess.Text = "Produto atualizado";
+                }
+            }
         }
 
         private void txtValue_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-        (e.KeyChar != '.'))
+        (e.KeyChar != ','))
             {
                 e.Handled = true;
             }
 
             // only allow one decimal point
-            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
             {
                 e.Handled = true;
             }
