@@ -95,7 +95,6 @@ namespace GGWP_Store
 
         public void newProduct()
         {
-
             try
             {
                 int cat = 0;
@@ -124,7 +123,7 @@ namespace GGWP_Store
                 string dataAt = DateTime.Now.ToString("yyyy/MM/dd");
 
                 Conexao.con.Open();
-                MySqlCommand insere = new MySqlCommand("insert into produto_ggwp (nome, descricao, preco, quantidade, categoria, data) values ('" + nome + "','" + desc + "'," + preco.ToString().Replace(',', '.') + "," + qtd + "," + cat + ", '"+ dataAt + "')", Conexao.con);
+                MySqlCommand insere = new MySqlCommand("insert into produto_ggwp (nome, descricao, preco, quantidade, categoria, data) values ('" + nome + "','" + desc + "'," + preco.ToString().Replace(',', '.') + "," + qtd + "," + cat + ", '" + dataAt + "')", Conexao.con);
                 insere.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -136,8 +135,9 @@ namespace GGWP_Store
                 Conexao.con.Close();
             }
 
+
         }
-        
+
         public void att(int id)
         {
             this.id = id;
@@ -171,7 +171,7 @@ namespace GGWP_Store
 
                 Conexao.con.Open();
                 //MySqlCommand insere = new MySqlCommand("update produto_ggwp set WHERE id_produto = " + id + " (nome, descricao, preco, quantidade, categoria) values ('" + nome + "','" + desc + "'," + preco + "," + qtd + ",'" + categoria + "')", Conexao.con);
-                MySqlCommand insere = new MySqlCommand("update produto_ggwp set nome = '" + nome + "', descricao = '" + desc + "', preco = " + preco.ToString().Replace(',', '.') + ", quantidade = " +qtd+ ", categoria = "+cat+", data = '"+ dataAt + "' where id_produto =" + id + ";", Conexao.con);
+                MySqlCommand insere = new MySqlCommand("update produto_ggwp set nome = '" + nome + "', descricao = '" + desc + "', preco = " + preco.ToString().Replace(',', '.') + ", quantidade = " + qtd + ", categoria = " + cat + ", data = '" + dataAt + "' where id_produto =" + id + ";", Conexao.con);
                 insere.ExecuteNonQuery();
             }
             catch (Exception ex)

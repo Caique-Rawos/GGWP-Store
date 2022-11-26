@@ -56,19 +56,20 @@ namespace GGWP_Store
         {
             try
             {
-                var id = Convert.ToInt32(dgv.Rows[dgv.CurrentCell.RowIndex].Cells[0].Value);
+                //int teste = Int32.TryParse(dgv.Rows[dgv.CurrentCell.RowIndex].Cells[0].Value);
+                int id = Convert.ToInt32(dgv.Rows[dgv.CurrentCell.RowIndex].Cells[0].Value);
                 F_NewProduct p = new F_NewProduct(id);
                 p.Show();
             }
-            catch (NullReferenceException ex2)
+            catch(NullReferenceException ex)
             {
-                Console.WriteLine(ex2.ToString());
-                MessageBox.Show("Selecione um produto da lista");
-            }
-            catch (Exception ex){
+                MessageBox.Show("Selecione algum produto!");
                 Console.WriteLine(ex.ToString());
             }
-            
+
+            catch(Exception ex2){
+                Console.WriteLine(ex2.ToString());
+            }
         }
 
         private void F_Products_Load(object sender, EventArgs e)

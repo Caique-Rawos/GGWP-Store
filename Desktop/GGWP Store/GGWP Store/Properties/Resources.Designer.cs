@@ -73,6 +73,16 @@ namespace GGWP_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _696278_texturizado_fundo_preto_grátis_vetor {
+            get {
+                object obj = ResourceManager.GetObject("696278-texturizado-fundo-preto-grátis-vetor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Amanda {
             get {
                 object obj = ResourceManager.GetObject("Amanda", resourceCulture);
@@ -216,6 +226,16 @@ namespace GGWP_Store.Properties {
         internal static System.Drawing.Bitmap Rectangle_77 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 77", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_3 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

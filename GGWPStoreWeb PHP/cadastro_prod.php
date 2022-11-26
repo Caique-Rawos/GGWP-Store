@@ -58,11 +58,11 @@ include "cabecalho.php";
           <div class="row form-group">
             <div class="col-md-4 col-8">
               <h2>Titulo</h2>
-              <input type="text" class="form-control" name="nome" id="nome" maxlength="30"  value="" placeholder="Insira o Titulo"/>
+              <input type="text" class="form-control" name="nome" id="nome" maxlength="48"  value="" placeholder="Insira o Titulo"/>
             </div>
             <div class="col-md-7 col-8">
               <h2>Descrição</h2>
-              <input type="text" class="form-control" name="desc" id="desc" maxlength="100"  value="" placeholder="Insira uma Descricao para o produto"/>
+              <input type="text" class="form-control" name="desc" id="desc" value="" placeholder="Insira uma Descricao para o produto"/>
             </div>
           </div>
           <div class="row mt-4">

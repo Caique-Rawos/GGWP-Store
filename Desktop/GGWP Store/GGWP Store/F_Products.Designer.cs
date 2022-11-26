@@ -46,7 +46,7 @@ namespace GGWP_Store
             this.txtSrc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.txtSrc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSrc.ForeColor = System.Drawing.Color.White;
-            this.txtSrc.Location = new System.Drawing.Point(271, 21);
+            this.txtSrc.Location = new System.Drawing.Point(30, 23);
             this.txtSrc.Multiline = true;
             this.txtSrc.Name = "txtSrc";
             this.txtSrc.Size = new System.Drawing.Size(530, 39);
@@ -61,7 +61,7 @@ namespace GGWP_Store
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(807, 21);
+            this.button1.Location = new System.Drawing.Point(566, 23);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 38);
             this.button1.TabIndex = 6;
@@ -78,7 +78,7 @@ namespace GGWP_Store
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(929, 21);
+            this.btnAdd.Location = new System.Drawing.Point(688, 23);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(116, 38);
             this.btnAdd.TabIndex = 7;
@@ -91,7 +91,7 @@ namespace GGWP_Store
             this.dgv.AllowUserToAddRows = false;
             this.dgv.AllowUserToDeleteRows = false;
             this.dgv.AllowUserToOrderColumns = true;
-            this.dgv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dgv.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -102,7 +102,7 @@ namespace GGWP_Store
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv.Location = new System.Drawing.Point(106, 95);
+            this.dgv.Location = new System.Drawing.Point(15, 79);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -114,7 +114,7 @@ namespace GGWP_Store
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(1157, 564);
+            this.dgv.Size = new System.Drawing.Size(998, 595);
             this.dgv.TabIndex = 8;
             // 
             // btnEdit
@@ -126,7 +126,7 @@ namespace GGWP_Store
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(1051, 21);
+            this.btnEdit.Location = new System.Drawing.Point(810, 23);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(116, 38);
             this.btnEdit.TabIndex = 9;
@@ -139,7 +139,7 @@ namespace GGWP_Store
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1366, 734);
+            this.ClientSize = new System.Drawing.Size(1281, 734);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.btnAdd);

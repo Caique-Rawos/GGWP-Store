@@ -34,7 +34,6 @@ namespace GGWP_Store
             this.txtValue = new System.Windows.Forms.TextBox();
             this.txtDesc = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,7 +47,8 @@ namespace GGWP_Store
             this.erroQtd = new System.Windows.Forms.Label();
             this.txtSucess = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbCat = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // txtQtd
@@ -57,7 +57,7 @@ namespace GGWP_Store
             this.txtQtd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtQtd.ForeColor = System.Drawing.Color.White;
-            this.txtQtd.Location = new System.Drawing.Point(687, 393);
+            this.txtQtd.Location = new System.Drawing.Point(686, 390);
             this.txtQtd.Multiline = true;
             this.txtQtd.Name = "txtQtd";
             this.txtQtd.Size = new System.Drawing.Size(155, 39);
@@ -70,7 +70,7 @@ namespace GGWP_Store
             this.txtValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtValue.ForeColor = System.Drawing.Color.White;
-            this.txtValue.Location = new System.Drawing.Point(469, 393);
+            this.txtValue.Location = new System.Drawing.Point(468, 390);
             this.txtValue.Multiline = true;
             this.txtValue.Name = "txtValue";
             this.txtValue.Size = new System.Drawing.Size(144, 39);
@@ -86,7 +86,7 @@ namespace GGWP_Store
             this.txtDesc.Location = new System.Drawing.Point(195, 497);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(646, 64);
+            this.txtDesc.Size = new System.Drawing.Size(646, 54);
             this.txtDesc.TabIndex = 6;
             // 
             // txtName
@@ -95,22 +95,11 @@ namespace GGWP_Store
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtName.ForeColor = System.Drawing.Color.White;
-            this.txtName.Location = new System.Drawing.Point(469, 238);
+            this.txtName.Location = new System.Drawing.Point(433, 188);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(373, 39);
+            this.txtName.Size = new System.Drawing.Size(408, 39);
             this.txtName.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::GGWP_Store.Properties.Resources.fa_upload;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(195, 140);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(192, 188);
-            this.panel2.TabIndex = 2;
             // 
             // label10
             // 
@@ -128,7 +117,7 @@ namespace GGWP_Store
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(681, 348);
+            this.label8.Location = new System.Drawing.Point(680, 345);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(154, 31);
             this.label8.TabIndex = 1;
@@ -139,7 +128,7 @@ namespace GGWP_Store
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(463, 348);
+            this.label6.Location = new System.Drawing.Point(462, 345);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 31);
             this.label6.TabIndex = 1;
@@ -150,7 +139,7 @@ namespace GGWP_Store
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(463, 189);
+            this.label5.Location = new System.Drawing.Point(427, 140);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 31);
             this.label5.TabIndex = 1;
@@ -186,7 +175,7 @@ namespace GGWP_Store
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(195, 585);
+            this.button3.Location = new System.Drawing.Point(195, 576);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(98, 43);
             this.button3.TabIndex = 8;
@@ -202,7 +191,7 @@ namespace GGWP_Store
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnSend.ForeColor = System.Drawing.Color.Lime;
-            this.btnSend.Location = new System.Drawing.Point(737, 585);
+            this.btnSend.Location = new System.Drawing.Point(743, 576);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(98, 43);
             this.btnSend.TabIndex = 9;
@@ -214,7 +203,7 @@ namespace GGWP_Store
             // 
             this.erroNome.AutoSize = true;
             this.erroNome.ForeColor = System.Drawing.Color.Red;
-            this.erroNome.Location = new System.Drawing.Point(466, 284);
+            this.erroNome.Location = new System.Drawing.Point(465, 214);
             this.erroNome.Name = "erroNome";
             this.erroNome.Size = new System.Drawing.Size(0, 13);
             this.erroNome.TabIndex = 10;
@@ -223,7 +212,7 @@ namespace GGWP_Store
             // 
             this.erroValor.AutoSize = true;
             this.erroValor.ForeColor = System.Drawing.Color.Red;
-            this.erroValor.Location = new System.Drawing.Point(466, 438);
+            this.erroValor.Location = new System.Drawing.Point(465, 332);
             this.erroValor.Name = "erroValor";
             this.erroValor.Size = new System.Drawing.Size(0, 13);
             this.erroValor.TabIndex = 11;
@@ -232,7 +221,7 @@ namespace GGWP_Store
             // 
             this.erroQtd.AutoSize = true;
             this.erroQtd.ForeColor = System.Drawing.Color.Red;
-            this.erroQtd.Location = new System.Drawing.Point(684, 438);
+            this.erroQtd.Location = new System.Drawing.Point(683, 332);
             this.erroQtd.Name = "erroQtd";
             this.erroQtd.Size = new System.Drawing.Size(0, 13);
             this.erroQtd.TabIndex = 12;
@@ -252,27 +241,38 @@ namespace GGWP_Store
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(189, 343);
+            this.label2.Location = new System.Drawing.Point(189, 345);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 31);
             this.label2.TabIndex = 14;
             this.label2.Text = "Categoria";
             // 
-            // comboBox1
+            // cmbCat
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.cmbCat.ForeColor = System.Drawing.Color.White;
+            this.cmbCat.FormattingEnabled = true;
+            this.cmbCat.Items.AddRange(new object[] {
             "Colecionáveis",
             "Games",
             "Computadores",
             "Periféricos",
             "HQ\'s"});
-            this.comboBox1.Location = new System.Drawing.Point(200, 393);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(187, 21);
-            this.comboBox1.TabIndex = 15;
+            this.cmbCat.Location = new System.Drawing.Point(195, 390);
+            this.cmbCat.Name = "cmbCat";
+            this.cmbCat.Size = new System.Drawing.Size(192, 21);
+            this.cmbCat.TabIndex = 15;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::GGWP_Store.Properties.Resources.fa_upload;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(195, 140);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(192, 188);
+            this.panel2.TabIndex = 2;
             // 
             // F_NewProduct
             // 
@@ -280,7 +280,7 @@ namespace GGWP_Store
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1042, 706);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbCat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSucess);
             this.Controls.Add(this.erroQtd);
@@ -304,6 +304,7 @@ namespace GGWP_Store
             this.Name = "F_NewProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Novo Produto";
+            this.Load += new System.EventHandler(this.F_NewProduct_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,6 +329,6 @@ namespace GGWP_Store
         private System.Windows.Forms.Label erroQtd;
         private System.Windows.Forms.Label txtSucess;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbCat;
     }
 }

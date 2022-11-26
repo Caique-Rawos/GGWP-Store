@@ -39,7 +39,7 @@ namespace GGWP_Store
                 txtDesc.Text = r["descricao"].ToString();
                 txtValue.Text = r["preco"].ToString();
                 txtQtd.Text = r["quantidade"].ToString();
-                comboBox1.Text = r["categoria"].ToString();
+                cmbCat.Text = r["categoria"].ToString();
                 //txtUser.Text = r["user"].ToString();
             }
             Conexao.con.Close();
@@ -52,7 +52,7 @@ namespace GGWP_Store
             txtQtd.Text = "";
             txtDesc.Text = "";
             txtSucess.Text = "";
-            comboBox1.Text = "";
+            cmbCat.Text = "";
             erroNome.Text = "";
             erroValor.Text = "";
             erroQtd.Text = "";
@@ -64,13 +64,13 @@ namespace GGWP_Store
 
         private void btnSend_Click(object sender, EventArgs e)
         {            
-            if (txtName.Text == "" || txtQtd.Text == "" || txtValue.Text == "")
+            if (txtName.Text == "" || txtQtd.Text == "" || txtValue.Text == "" || cmbCat.Text == "")
             {
                 MessageBox.Show("PREENCHA OS CAMPOS NECESSÁRIOS");
             }
             else
             {
-                Product p = new Product(id, Convert.ToInt32(txtQtd.Text), Convert.ToDouble(txtValue.Text), txtName.Text, comboBox1.Text, txtDesc.Text);
+                Product p = new Product(id, Convert.ToInt32(txtQtd.Text), Convert.ToDouble(txtValue.Text), txtName.Text, cmbCat.Text, txtDesc.Text);
                 if (op == 0){
                     p.newProduct();
                     txtSucess.Text = "Produto cadastrado";
@@ -86,7 +86,7 @@ namespace GGWP_Store
         private void txtValue_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-        (e.KeyChar != ','))
+                (e.KeyChar != ','))
             {
                 e.Handled = true;
             }
@@ -102,6 +102,11 @@ namespace GGWP_Store
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
                 e.Handled = true;
+        }
+
+        private void F_NewProduct_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

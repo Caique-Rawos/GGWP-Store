@@ -33,10 +33,10 @@ namespace GGWP_Store
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,18 +62,35 @@ namespace GGWP_Store
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(5, 5, 50, 5);
-            this.label3.Size = new System.Drawing.Size(421, 58);
+            this.label3.Size = new System.Drawing.Size(576, 130);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Sobre nós:\r\nLoja virtual voltada ao público geek/gamer.";
+            this.label3.Text = "Sobre nós:\r\nLoja virtual voltada ao público geek/gamer.\r\n\r\nFocada em trazer a mel" +
+    "hor experiência para nossos clientes.\r\n ";
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(12, 335);
+            this.panel4.Location = new System.Drawing.Point(26, 322);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(560, 97);
+            this.panel4.Size = new System.Drawing.Size(880, 267);
             this.panel4.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(118, 282);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(5, 5, 50, 5);
+            this.label4.Size = new System.Drawing.Size(421, 34);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Loja virtual voltada ao público geek/gamer.";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel2
             // 
@@ -95,32 +112,20 @@ namespace GGWP_Store
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::GGWP_Store.Properties.Resources.Rectangle_71;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackgroundImage = global::GGWP_Store.Properties.Resources._696278_texturizado_fundo_preto_grátis_vetor;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(2, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(585, 199);
+            this.panel1.Size = new System.Drawing.Size(969, 210);
             this.panel1.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(118, 282);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(5, 5, 50, 5);
-            this.label4.Size = new System.Drawing.Size(421, 34);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Loja virtual voltada ao público geek/gamer.";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // F_UserProfile
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(585, 444);
+            this.ClientSize = new System.Drawing.Size(1202, 616);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label4);

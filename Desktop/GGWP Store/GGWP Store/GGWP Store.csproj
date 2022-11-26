@@ -105,6 +105,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_Detalhes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Detalhes.Designer.cs">
+      <DependentUpon>F_Detalhes.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_NotaFiscal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     <Compile Include="Vendas.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Detalhes.resx">
+      <DependentUpon>F_Detalhes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_NotaFiscal.resx">
       <DependentUpon>F_NotaFiscal.cs</DependentUpon>
@@ -319,6 +328,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Amanda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\696278-texturizado-fundo-preto-grátis-vetor.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
