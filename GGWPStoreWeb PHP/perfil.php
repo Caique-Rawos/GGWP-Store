@@ -12,7 +12,7 @@ if($_SESSION['login'] == ""){
         ");
 }
 
-$sql = "SELECT * FROM usuario_ggwp WHERE email = '{$_SESSION['login']}'";
+$sql = "SELECT usuario_ggwp.*, count(id_produto) as total_itens FROM usuario_ggwp left join produto_ggwp on usuario = email WHERE email = '{$_SESSION['login']}'";
 try{
   foreach ($conn->query($sql) as $row) {
     $username = $row['username'];
@@ -22,6 +22,7 @@ try{
     }else{
       $foto = "data:image;base64," . base64_encode($row["foto"]);
     }
+    $total_itens = $row['total_itens'];
     $count++;
 }
     $data = str_replace("-", "/", $data);
@@ -84,7 +85,7 @@ if($count != 1){
           </div>
           
           <div class="col-lg-3 col-md-6 col-sm-6">
-             <h1 class="lead corLetra mt-4"><i class="fa-solid fa-shop corLetra"></i> &nbsp; Produtos: 5</h1>
+             <h1 class="lead corLetra mt-4"><i class="fa-solid fa-shop corLetra"></i> &nbsp; Produtos: <?=$total_itens?></h1>
              <h1 class="lead corLetra mt-4"><i class="fa-solid fa-user-plus corLetra"></i> &nbsp; Seguindo: 0</h1>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6">
@@ -129,48 +130,28 @@ if($count != 1){
               <div class="col-lg-1">
               </div>
 
-            <div class="col-6 col-lg-2 col-md-4 mt-2">
-              <div class="prod altura100"><a class="decoracao" href="produto.php?id_prod=1">
-                  <img class="tamanho img-fluid" src="imagens/foto_colecionaveis.png"></a>
-                  <p class="corLetra lead">Funkopop Star Wars</p>
-                    <p class="corLetra lead mt-2">R$ 79,99</p>
-              </div>
-            </div>
-
-            <div class="col-6 col-lg-2 col-md-4 mt-2">
-              <div class="prod altura100"><a href="produto.php?id_prod=2">
-                  <img class="tamanho img-fluid" src="imagens/foto_games.png"></a>
-                  <p class="corLetra lead">The last of Us 2</p>
-                        <p class="corLetra lead mt-2">R$ 79,99</p>
-              </div>
-          </div>
-
-            <div class="col-6 col-lg-2 col-md-4 mt-2">
-              <div class="prod altura100"> <a class="decoracao" href="produto.php?id_prod=3">
-                  <img class="tamanho img-fluid" src="imagens/foto_computadores.png"></a>
-                  <p class="corLetra lead">Notebook gueimer</p>
-                        <p class="corLetra lead mt-2">R$ 79,99</p>
+              <?php
+              $count = 0;
+              $sql = "select * from produto_ggwp where usuario = '{$_SESSION['login']}';";
+              foreach ($conn->query($sql) as $row) {
+                if($count % 5 == 0 && $count != 0){
+                  echo "<div class='col-lg-1'>
                   </div>
-            </div>
+                  
+                  <div class='col-lg-1'>
+                  </div>";
+                }
 
-            <div class="col-6 col-lg-2 col-md-4 mt-2">
-              <div class="prod altura100"><a class="decoracao" href="produto.php?id_prod=4">
-                  <img class="tamanho img-fluid" src="imagens/foto_perifericos.png"></a>
-                  <p class="corLetra lead">Mouse Gamer Top</p>
-                        <p class="corLetra lead mt-2">R$ 79,99</p>
-                  </div>
-            </div>
-
-            <div class="col-6 col-lg-2 col-md-4 mt-2">
-              <div class="prod altura100"><a class="decoracao" href="produto.php?id_prod=5">
-                  <img class="tamanho img-fluid" src="imagens/foto_hqs.png"></a>
-                  <p class="corLetra lead">HQ Batman</p>
-                    <p class="corLetra lead mt-2">R$ 79,99</p>
-              </div>
-            </div>
-
-              <div class="col-lg-1">
-              </div>
+                echo '<div class="col-6 col-lg-2 col-md-4 mt-2">
+                <div class="prod altura100"><a class="decoracao" href="produto.php?id_prod='.$row['id_produto'].'">
+                    <img class="tamanho img-fluid" src="data:image;base64,'.base64_encode($row["foto"]).'"></a>
+                    <p class="corLetra lead">'.$row['nome'].'</p>
+                      <p class="corLetra lead mt-2">R$ '.number_format($row['preco'],2,",",".").'</p>
+                </div>
+              </div>';
+              $count++;
+            }
+              ?>
 
           </div>
         </div>
