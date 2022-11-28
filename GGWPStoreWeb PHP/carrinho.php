@@ -61,25 +61,6 @@ include "cabecalho.php";
         }, "json");
       }
 
-      function geraBoleto(id){
-        var tot = document.getElementById("valor_tot").innerHTML;
-        var prod = document.getElementById("valor_prod").innerHTML;
-        var frete = document.getElementById("valor_frete").innerHTML;
-        $.post( 
-          "Boleto/samples/banco_do_brasil.php", { 
-          total: tot,
-          prod: prod,
-          frete: frete,
-        },
-        function( data ) {
-          if(data.error == "0"){
-
-          }else{
-            alert("Erro ao gerar boleto!");
-          }
-        }, "json");
-      }
-
       function verifica(){
         var prod = document.getElementById("valor_prod").innerHTML;
         if(prod == "" || prod == "0,00"){
