@@ -335,5 +335,8 @@
   <ItemGroup>
     <None Include="Resources\696278-texturizado-fundo-preto-grátis-vetor.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\tio patinhas.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
