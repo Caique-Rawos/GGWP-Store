@@ -103,11 +103,13 @@ if($count != 1){
 
       <div class="container">
         <div class="row">
-          <div class="col-6 col-lg-2 col-md-3 bordaBaixo">
+          <div class="col-6 col-lg-2 col-md-3">
             <a class="categorias" href="#principal"><h1 class="corLetra lead text-center">Pagina Principal</h1></a>
           </div>
           <div class="col-6 col-lg-1 col-md-3">
             <a class="categorias" href="cadastro_prod.php"><h1 class="corLetra lead text-center">Produtos</h1></a>
+          </div><div class="col-6 col-lg-1 col-md-3">
+            <a class="categorias" href="listVendas.php"><h1 class="corLetra lead text-center">Vendas</h1></a>
           </div><hr class="mt-2">
         </div>
       </div>

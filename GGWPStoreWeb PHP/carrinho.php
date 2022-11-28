@@ -52,8 +52,9 @@ include "cabecalho.php";
         },
         function( data ) {
           if(data.error == "0"){
-            //geraBoleto(data.id);
-            location.reload(true);
+            var id = data.id;
+            document.getElementById("valor_prod").innerHTML = "0,00";
+            window.open("Boleto/samples/banco_do_brasil.php?id="+id+"", "_blank");
           }else{
             alert("Erro ao finalizar venda!");
           }
@@ -72,7 +73,7 @@ include "cabecalho.php";
         },
         function( data ) {
           if(data.error == "0"){
-            geraBoleto(data.id);
+
           }else{
             alert("Erro ao gerar boleto!");
           }

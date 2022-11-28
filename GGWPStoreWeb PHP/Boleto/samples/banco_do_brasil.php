@@ -1,8 +1,13 @@
 <?php
+include '../../conexao.php';
+include '../../session.php';
 
-$total = $_POST['total'];
-$prod = $_POST['prod'];
-$frete = $_POST['frete'];
+$id = $_GET['id'];
+
+$sql = "select total from vendas_ggwp  where idVendas = $id;";
+foreach($conn->query($sql) as $row){
+    $total = $row['total'];
+}
 
 require '../autoloader.php';
 
@@ -14,7 +19,7 @@ $cedente = new Agente('GGWP Store', '02.123.123/0001-11', 'CLS 403 Lj 23', '1348
 
 $boleto = new BancoDoBrasil(array(
     // Parâmetros obrigatórios
-    'dataVencimento' => date('d/m/Y', strtotime("+30 days")),
+    'dataVencimento' => new DateTime(strval(date('Y-m-d', strtotime("+30 days")))),
     'valor' => $total,
     'sequencial' => 1234567,
     'sacado' => $sacado,
@@ -34,8 +39,7 @@ $boleto = new BancoDoBrasil(array(
     'contaDv' => 2,
     'agenciaDv' => 1,
     'descricaoDemonstrativo' => array( // Até 5
-        'Compra de materiais cosméticos',
-        'Compra de alicate',
+        'Compra De Produtos Na GGWP Store',
     ),
     'instrucoes' => array( // Até 8
         'Após o dia 30/11 cobrar 2% de mora e 1% de juros ao dia.',
